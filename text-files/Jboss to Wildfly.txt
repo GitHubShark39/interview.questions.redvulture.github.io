@@ -1,0 +1,9 @@
+Jboss to Wildfly
+
+
+8.0.0	7.0	20 November 2014[20]	JBoss renamed to WildFly. Undertow replaced JBossWeb as web container
+9.0.0 "Kenny"	7.0	2 July 2015[20]	WildFly/WildFly Core split.
+10.0.0	7.0	9 February 2016[20]	Java 8+ support (Java 7 support discontinued), ActiveMQ Artemis, HA Singleton Deployments, HA Singleton Message Driven Beans (MDBs) and MDB Delivery Groups, Stateless Session Bean and Message Driven Bean Automatic Pool Sizing, Hibernate 5
+10.1.0	7.0	19 August 2016[20]	
+
+

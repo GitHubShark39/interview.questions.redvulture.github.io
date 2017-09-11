@@ -1,0 +1,25 @@
+Upstream Module
+In order to set up a round robin load balancer, we will need to use the nginx upstream module. We will incorporate the configuration into the nginx settings.
+
+Go ahead and open up your website’s configuration (in my examples I will just work off of the generic default virtual host):
+
+sudo nano /etc/nginx/sites-available/default
+We need to add the load balancing configuration to the file.
+
+First we need to include the upstream module which looks like this:
+
+upstream backend  {
+  server backend1.example.com;
+  server backend2.example.com;
+  server backend3.example.com;
+}
+We should then reference the module further on in the configuration:
+
+ server {
+  location / {
+    proxy_pass  http://backend;
+  }
+}
+Restart nginx:
+
+sudo service nginx restart

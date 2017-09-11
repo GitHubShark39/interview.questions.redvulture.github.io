@@ -1,0 +1,126 @@
+DevOps Engineer AllState 
+
+Available to Interview: Immediately
+Available to Start: July 26th
+Currently finishing up a project inLas Vegas but can  be onsite by Wednesday July 26th
+
+Hi Royal,
+Please accept this email as confirmation of a phone interview for the DevOps Engineer contract position for Astaid and their client Allstate.  
+
+On the call Monday July 24th @ 8:00am pst will be Ron Cormier, Senior Systems Engineer. 
+He will contact you at (313)694-2930 to discuss the position’s responsibilities. For your reference, 
+I have attached your Plan b profile and coversheet provided to Ron and a job description below. 
+Be prepared to provide details of your technical capabilities specific to the job description and our conversations 
+(ie: GIT, scripting,, Ruby, Shell , Bash, CI/CD, AWS services, config management tools, vagrant, docker, artifactory, 
+linux admin, build deploy models, automation, ect).
+ 
+I recommend taking a few minutes to look Ron Cormier up on LinkedIn to give you insight into his professional background. 
+He will be listening very carefully for communication skills so please speak clearly and slowly enough for him to 
+effectively hear your answers. In addition, speak with energy and confidence.
+ 
+ Below are some helpful interview notes:
+1.Be prepared by reading the job description thoroughly and having your Plan b profile printed out and handy.
+
+2.Respond to questions regarding your previous job in a positive light. Don’t bash a previous employer, it sets a bad precedent. 
+Contracting, downsizing, reorganization, expanding your skill sets, etc are all reasonable comments.
+t
+3.Answer questions with FULL technical detail. Do not worry about talking too much. You must let the interviewer know your 
+level of knowledge through your answers. Do not provide a Yes or NO one word answer.
+
+4.This is a contract  or contract to hire so please indicate you are open to full time employment after the contract period.
+
+5.Be positive and enthusiastic, indicate your desire to contribute.
+ 
+Additional hiring manager comments about previous problems during the interviews:
+- A little hard to understand (talked to fast or to quietly)
+- Answers were not clear or to the point when asked about previous employment roles/responsibilities listed in the resume.
+- Had responsibilities listed in his DevOps role of a Developer or a Build Engineer
+- When asked about daily tasks or issues encountered, it was more of a team effort to resolve them
+- It seemed that the existing configuration management tools were pre-existing and reused
+ 
+ 
+Good luck and please call post interview to give me your impression on how it went,
+Beth dlP
+Please consider Royal Jackson for the DevOps Engineer consulting position. He possesses excellent skills and 
+is a great communicator too. He is available for an immediate interview and can be on the job by Wednesday on next week.
+ 
+Royal is accomplished in the following areas:
+-Work with a cross functional teams to Leverage industry standard tooling to automate all manual tasks pertaining
+to infrastructure provisioning, in support of self-service and API-driven provisioning.
+
+-Implement code and orchestration necessary.
+
+-Working with CI/CD/CM tools to automate and make sure that the code acuracy for the devops pipeline is correct.
+
+-Working with tools, such as Jenkins, Ant, Maven, Cruise Control,.Net, WebSphere, WildFly, Tomcat, Apache, Nginx, IIS 8.0, Java, Perl, 
+Python, Bash,Shell Scripting, implementing
+deployments automated with CHEF, and troubleshooting the different environments which consist of Dev, Integration, Staging, QA, UAT, CM, 
+PreProd, and Production.
+
+-Implemented integrated components and build tools that allowed the system and the entire team to operate more effiently.
+
+-Monitor systems to ensure stability, reliabity, and availability of applications services for mobile and web environments.
+
+-Maintain the Full-Stack which consist of Puppet/Chef/Ansible/Docker/AEM/VM Ware/AWS cloud environments. Lastly maintain the 
+GIT/ClearCase/SVN repositories, as well as the full CI/CD environment.
+ 
+Available to Interview: Immediately
+Available to Start: July 26th
+Currently finishing up a project in Las Vegas but can be onsite by Wednesday July 26th
+Sr. DevOps Engineer must be able to work with clients and technical and non-technical staff. Sr. DevOps Engineers will work at a client location. 
+They become a trusted part of the broader team responsible for the delivery of service platforms.  They develop and improve service platforms 
+by providing design, build, and deployment workflow automation and controlled environments. All services require a deep knowledge of 
+DEVOPS build and deployment tools for platforms (infrastructure and application). 
+RESPONSIBILITIES: • Standup internal Testing as a Service Delivery Model (using both original work and from existing scripts 
+(Jenkinsfile) in consultation with Architects.
+
+• Build platform as a service for API and Regression testing pipelines.
+• Build CLI platform for continuous integration and continuous delivery practices.
+• Automation of continuous integration and continuous delivery processes using ‘code as infrastructure’.
+ 
+Description Management and deployment
+• Understand and promote Service Delivery Model.
+• Implementation of infrastructure as code.
+• Deep understanding of Application and Infrastructure build and deployment models.
+• Accurately estimate activities.
+• Communicating status and activities to team members.
+• Developing and improving automated provisioning solutions for platforms.
+• Continuously learning and improving their technical skillset by growing knowledge of existing skills, and 
+learning new technologies that may be useful for future work.
+• Other duties, as assigned by a practice Director or AVP.
+ 
+QUALIFICATIONS: The position requires specialized knowledge and experience in performing the following:
+• Experience architecting CI/CD pipelines with major cloud provider platforms (AWS, and CloudFoundry).
+• Hands on experience as an administrator of Linux or Windows, preferably both.
+• Proficient at writing scripts for maintenance and automation in a variety of languages (e.g. Groovy, Bash, Ruby).
+• Experience with GIT.
+• Skilled with common configuration management tools (Puppet, Chef, Ansible, etc.)
+• Skilled with DevOps workflows and tools (Vagrant, Docker, Packer, etc.)
+• Experience with Artifactory and event processing.
+• Skilled with common CI/CD tools (Jenkins, Maven, Gradel, JIRA, Sonar, etc.)
+• Prior use and integration of AWS services including: CodeCommit, CodeBuild, CodePipeline, CodeDeploy, ColudFormation, CloudWatch, CloudTrail and Lambda.
+• Strong writing skills, and the ability to clearly communicate complex ideas and designs through written and spoken word.
+
+• Prior use and integration of AWS services including:  ***
+EC2
+VPC
+CodeCommit
+CodeBuild
+CodePipeline
+CodeDeploy
+CloudFormation, 
+CloudWatch
+CloudTrail
+ and Lambda.
+CloudFoundry
+ 
+cid:image001.jpg@01CA411F.23FAA1A0
+ 
+Beth de la Pena
+Plan b Solutions
+905 Calle Negocio # 73685
+San Clemente, CA 92673
+bdelapena@planbsolutions.com
+Office: (916) 266-6448
+Mobile: (916) 521-0746
+ 

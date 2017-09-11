@@ -1,0 +1,16 @@
+Prior use and integration of AWS services including: 
+
+
+AWS services:
+aws VPC
+CodeCommit [X]
+CodeBuild [X]
+CodePipeline [ ]
+CodeDeploy [ ]
+
+Know about, but have not use:
+CloudFormation [X]
+CloudWatch X
+CloudTrail X
+Lambda X
+CloudFoundry

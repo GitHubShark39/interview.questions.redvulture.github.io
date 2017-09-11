@@ -1,0 +1,178 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Cambria;}}
+{\colortbl ;\red0\green0\blue0;}
+{\*\generator Riched20 10.0.14393}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs24\lang9\par
+\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720\sl276\slmult1\cf1\b\lang1033 Tell me about your last position, what were your specific responsibilities? \par
+
+\pard\widctlpar\sl276\slmult1\par
+
+\pard\widctlpar\li720\sl276\slmult1\b0 Collaborating with Developers, QA, IT, Project Owners and Userbase. Architect requirements for build process automation while\par
+Driving the build automation process for build requirements troubleshooting build issues while providing direct support for builds on \par
+build errors, failures and warnings. standaridizing process for CI/CD/CM processes and procedures.\par
+\par
+Working with CI/CD/CM tools to automate and make sure that the code acuracy for the devops pipeline is correct. Working with tools such as:\par
+\par
+Version Control: VSTS(Visual Studio Team Services)/GIT/ClearCase/SVN/Bitbucket\par
+Build Automation: Ant, Gradle, Maven, .Net\par
+Continous Integration: Jenkins, Hudson, Cruise Control\par
+Staging/Packaging Managers: NPM, Jfrog Artifactory,GEMS\par
+Server Side Java Script: ExpressJs, NodeJS, AngularJs\par
+App Servers: WebSphere, WildFly, Tomcat\par
+Http Servers: Apache, Nginx, IIS 8.0\par
+Program Languages: Java, C++, xCode\par
+SDK kits: Android, Xamarin, Visual Studio 2012/2015, JDK, ChefDK, AptanaStudio\par
+Scripting: Perl, Python, Php, Ruby, Yaml,Bash,Shell Scripting, \par
+\par
+Implementing deployments automated with CHEF, and troubleshooting the different environments which consist of Dev, QA, UAT, PreProd, and Production. Working with Windows 2012 server and Windows 2016 server, supporting the different SCM repos. Configuring VM/AWS instances for QA and UAT environments. Creating and Packaging RPM, MSI - solid experience with package managers\par
+VMware, KVM virtual environment, working with AWS, cloud, Vagrant, VirtualBox environment experience Working with WildFly/JackRabbit MQ in QA, UAT and PROD environments.\par
+Integrating Docker with ArtFactory, BitBucket for the deployment to verify and deploy the artifacts. Maintaing Docker Containers, Scripts, Images, and Files, also deploying to a Docker Repo for the Docker Production.\par
+Working with databases and Oracle DBs on multiple projects, such as CSC and others.\par
+
+\pard\widctlpar\sl276\slmult1\b  -\par
+\par
+\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720 Suggest an effective, zero down time, maintenance/patching policy for instances beyond Auto Scaling Groups.\par
+
+\pard\widctlpar\par
+
+\pard\widctlpar\li720\tab\b0 "AutoScalingGroup": \{\par
+  "Type": "AWS::AutoScaling::AutoScalingGroup",\par
+  "Properties": \{\par
+    "AvailabilityZones": [ "us-west-1", "us-west-1" ],\par
+    "LaunchConfigurationName": \{ "Ref": "LaunchConfig" \},\par
+    "MinSize": "3",\par
+    "MaxSize": "5",\par
+    "HealthCheckType": "ELB",\par
+    "HealthCheckGracePeriod": "1800",\par
+    "LoadBalancerNames": [ \{ "Ref": "LoadBalancer" \} ]\par
+  \},\par
+  "UpdatePolicy": \{\par
+    "AutoScalingRollingUpdate": \{\par
+      "MinInstancesInService": "1",\par
+      "MaxBatchSize": "1",\par
+      "WaitOnResourceSignals": "true",\par
+      "PauseTime": "PT30M"\par
+    \}\par
+  \},\par
+  "CreationPolicy": \{\par
+    "ResourceSignal": \{\par
+      "Count": "3",\par
+      "Timeout": "PT30M"\par
+    \}\par
+  \}\par
+\}\par
+
+\pard\widctlpar\b\par
+
+\pard\widctlpar\li1440\b0 SuspendProcesses\par
+MinSuccessfulInstancesPercent\par
+WaitOnResourceSignals \par
+PauseTime \par
+
+\pard\widctlpar\b\tab\par
+\tab\par
+\tab\par
+
+\pard\widctlpar -\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720 What is the difference in IAM role and IAM user and when to use one over the other?\par
+
+\pard\widctlpar\tab\par
+
+\pard\widctlpar\li720\b0 An IAM user is an entity that you create in AWS. The IAM user represents the person or service who uses the IAM user to interact with AWS. \par
+\par
+An IAM role is very similar to a user, in that it is an identity with permission policies that determine what the identity can and cannot do in AWS. \par
+\par
+When to use one over the other?\par
+IAM User:\par
+You created an AWS account and you're the only person who works in your account.\par
+Other people in your group need to work in your AWS account, and your group is using no other identity mechanism.\par
+You want to use the command-line interface (CLI) to work with AWS.\par
+\par
+IAM Role:\par
+You're creating an application that runs on an Amazon EC2 instance and that application makes requests to AWS.\par
+You're creating an app that runs on a mobile phone and that makes requests to AWS.\par
+
+\pard\widctlpar\b\tab\par
+\tab\par
+
+\pard\widctlpar -\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720 What is the difference between vertical scaling and horizontal scaling?\par
+
+\pard\widctlpar\b0\tab Horizontal scaling means that you scale by adding more machines for your \tab resources. Vertical scaling means that you scale by adding more cpu, ram to \tab an existing machine.\par
+\b\par
+\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720 How can you protect your server from accidental termination?\par
+
+\pard\widctlpar\par
+\b0\tab Ways to Protect EC2 Instances from Accidental Termination and Loss of \tab Data\par
+\par
+
+\pard 
+{\pntext\f0 a.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pnlcltr{\pntxta.}}
+\widctlpar\fi-360\li1080 Instance Termination\par
+{\pntext\f0 b.\tab}Terminating an Instance\par
+{\pntext\f0 c.\tab}Enabling Termination Protection for an Instance\par
+{\pntext\f0 d.\tab}Changing the Instance Initiated Shutdown Behavior\par
+{\pntext\f0 e.\tab}Preserving Amazon EBS Volumes on Instance Termination\par
+{\pntext\f0 f.\tab}Troubleshooting\par
+
+\pard\widctlpar\b -\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720 What is the Health Check Grace Period in Auto Scaling Group? In which circumstances you will use a value different than the default value?\par
+
+\pard\widctlpar\par
+
+\pard\widctlpar\li720\b0 Health Check of an Auto Scaling instance is either healthy or unhealthy. After an instance is fully configured and passes the initial health checks, it is considered healthy by Auto Scaling and enters the InService state. Auto Scaling periodically performs health checks on the instances in your Auto Scaling group and identifies any instances that are unhealthy. \par
+\par
+You would use a value different than the default value, After the Auto Scaling marks an instance as unhealthy, \par
+it is scheduled for replacement. \par
+
+\pard\widctlpar\b\par
+
+\pard\widctlpar -\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720 What is the difference between Application Load Balancer and classic ELB?\par
+
+\pard\widctlpar\b0\tab Application Load Balancer (ALB) operates at Layer 7 of the OSI model. At \tab Layer 7, the ELB has the ability to inspect application-level content, not just \tab IP and port. This lets it route based on more complex rules than with the \tab Classic Load Balancer.\b\par
+
+\pard\widctlpar -\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720 If the root volume on an ec2 instance become 100% full, can you still login to the machine?\par
+
+\pard\widctlpar\tab\b0 Yes, If a instance won't boot you can mount the root drive using this \tab approach and then look at the boot scripts and system log to \tab determine if \tab there is a command that fails, or a service that is misbehaving.\b\par
+
+\pard\widctlpar\sl276\slmult1 -\par
+
+\pard 
+{\pntext\f0 1.\tab}{\*\pn\pnlvlbody\pnf0\pnindent0\pnstart1\pndec{\pntxta.}}
+\widctlpar\fi-360\li720\sl276\slmult1 Did you work with a team, were they onsite, or remote?  How many members?  Any offshore support?\par
+
+\pard\widctlpar\sl276\slmult1\b0\tab Normally I work with a team onsite, but sometimes due to time management \tab and human factors had to work remotely for support. For as team members \tab it ranged from 4 to 10 depending on the IT Infrastructue we had to support. \tab I have always had to do global offshore support to support our offshore \tab customers and clients.\b\par
+
+\pard\widctlpar\cf0\b0\par
+
+\pard\sa200\sl276\slmult1\lang9\par
+}
+ 

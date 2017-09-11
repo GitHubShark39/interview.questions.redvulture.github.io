@@ -1,0 +1,131 @@
+AWS Services Tutorial
+
+Git with AWS CodeCommit Tutorial
+
+Topics
+
+Step 1: Create an AWS CodeCommit Repository
+Step 2: Create a Local Repo
+Step 3: Create Your First Commit
+Step 4: Push Your First Commit
+Step 5: Share the AWS CodeCommit Repository and Push and Pull Another Commit
+Step 6: Create and Share a Branch
+Step 7: Create and Share a Tag
+Step 8: Set Up Access Permissions
+Step 9: Clean Up
+
+Getting Started with AWS CodeBuild
+Topics
+
+Step 1: Create or Use Amazon S3 Buckets to Store the Build Input and Output
+Step 2: Create the Source Code to Build
+Step 3: Create the Build Spec
+Step 4: Add the Source Code and the Build Spec to the Input Bucket
+Step 5: Create the Build Project
+Step 6: Run the Build
+Step 7: View Summarized Build Information
+Step 8: View Detailed Build Information
+Step 9: Get the Build Output Artifact
+Step 10: Clean Up
+
+Create a Four-Stage Pipeline CodePipeline
+Topics
+
+Step 1: Set Up Prerequisites
+Step 2: Create a Pipeline in AWS CodePipeline
+Step 3: Add Another Stage to Your Pipeline
+Step 4: Clean Up Resources
+
+CloudTrail
+
+CloudTrail enables you to retrieve a history of API calls and other events for all regions in your account. 
+This includes calls and events made with the AWS Management Console, AWS Command Line Interface, and AWS SDKs.
+
+Topics
+
+Overview for Creating a Trail
+Getting and Viewing Your CloudTrail Log Files
+Configuring Amazon SNS Notifications for CloudTrail
+Controlling User Permissions for CloudTrail
+Viewing Events with CloudTrail API Activity History
+
+
+Examples of How to Use AWS Lambda
+
+The use cases for AWS Lambda can be grouped into the following categories:
+
+Using AWS Lambda with AWS services as event sources – Event sources publish events that cause the 
+Lambda function to be invoked. These can be AWS services such as Amazon S3. For more information 
+and tutorials, see the following topics:
+Using AWS Lambda with Amazon S3
+Using AWS Lambda with Kinesis
+Using AWS Lambda with Amazon DynamoDB
+Using AWS Lambda with AWS CloudTrail
+Using AWS Lambda with Amazon SNS from Different Accounts
+
+
+AWS CodeDeploy
+
+Before you use AWS CodeDeploy for the first time, you must complete a number of prerequisite setup steps.
+
+To begin, you must sign up for an AWS account. To sign up, go to http://aws.amazon.com/ and choose Create an AWS Account.
+
+Then you can continue with the rest of the setup tasks in this section.
+
+Topics
+
+Step 1: Provision an IAM User
+Step 2: Install or Upgrade and Then Configure the AWS CLI
+Step 3: Create a Service Role for AWS CodeDeploy
+Step 4: Create an IAM Instance Profile for Your Amazon EC2 Instances
+Step 5: Try the AWS CodeDeploy Sample Deployment Wizard
+
+ Getting Started with AWS CodePipeline.
+
+Topics
+
+Step 1: Set Up Prerequisites
+Step 2: Create a Pipeline in AWS CodePipeline
+Step 3: Add Another Stage to Your Pipeline
+Step 4: Clean Up Resources
+
+
+AWS CodePipeline Tutorials
+
+The following tutorials and walkthroughs in other user guides provide guidance for integrating other AWS services into your pipelines:
+
+Create a Pipeline that Uses AWS CodeBuild in AWS CodeBuild User Guide
+Using AWS CodePipeline with AWS OpsWorks Stacks in AWS OpsWorks User Guide
+Continuous Delivery with AWS CodePipeline in AWS CloudFormation User Guide
+Elastic Beanstalk Walkthrough in AWS Elastic Beanstalk Developer Guide
+AWS for DevOps Getting Started Guide
+Explore Continuous Delivery in AWS with the Pipeline Starter Kit
+Set Up a Continuous Deployment Pipeline Using AWS CodePipeline
+
+
+Create a Simple Pipeline (AWS CodeCommit Repository)
+Before you begin, make sure you have completed the following tasks:
+
+Configure an IAM user
+Install and configure the AWS CLI
+Creating Your Key Pair Using Amazon EC2
+In addition, make sure to complete these service-specific tasks:
+
+AWS CodeCommit: Install Git and configure credentials
+AWS CodeDeploy: Create an IAM instance profile and an AWS CodeDeploy service role
+AWS CodePipeline: Assign AWS CodePipeline permissions to the IAM user role
+
+Topics
+
+Step 1: Create an AWS CodeCommit Repository and Local Repo
+Step 2: Add Sample Code to Your AWS CodeCommit Repository
+Step 3: Create an Amazon EC2 Instance and Install the AWS CodeDeploy Agent
+Step 4: Create an Application in AWS CodeDeploy
+Step 5: Create Your First Pipeline in AWS CodePipeline
+Step 6: Modify Code in Your AWS CodeCommit Repository
+Step 7: Optional Stage Management Tasks
+Step 8: Clean Up Resources
+
+
+
+

@@ -1,0 +1,55 @@
+Copy files to many servers
+
+Powershell - Copy a list of files to multiple servers and backup exisiting files
+
+http://www.vsysad.com/2016/06/powershell-script-to-copy-file-to-multiple-remote-servers/
+
+https://social.technet.microsoft.com/Forums/office/en-US/09575f93-7b17-4621-804d-4b018df34771/powershell-copy-a-list-of-files-to-multiple-servers-and-backup-exisiting-files?forum=winserverpowershell
+
+https://www.tecmint.com/copy-files-to-multiple-linux-servers/
+
+https://powershell.org/forums/topic/copy-file-to-multiple-servers/
+
+https://community.spiceworks.com/scripts/show/1134-simple-file-transfer-to-multiple-computers
+
+https://serverfault.com/questions/389404/use-scp-to-copy-a-file-to-different-servers
+
+https://www.garron.me/en/articles/scp.html
+
+
+https://social.technet.microsoft.com/Forums/office/en-US/09575f93-7b17-4621-804d-4b018df34771/powershell-copy-a-list-of-files-to-multiple-servers-and-backup-exisiting-files?forum=winserverpowershell
+
+http://juventusitprofessional.blogspot.co.uk/2013/09/powershell-copy-files-to-remote-servers.html
+
+https://www.petri.com/copy-files-to-multiple-computers-by-reading-simple-text-input-using-powershell
+
+#########################################################################################################################
+scp copy file to multiple servers
+
+https://serverfault.com/questions/389404/use-scp-to-copy-a-file-to-different-servers
+
+http://www.unix.com/shell-programming-and-scripting/124173-copy-file-one-server-multiple-server.html
+
+#########################################################################################################################
+copy file to multiple windows servers
+
+https://www.garron.me/en/articles/scp.html
+
+https://stackoverflow.com/questions/24931935/batch-file-to-copy-a-file-to-multiple-computers-by-iteration
+https://www.tecmint.com/cman-multi-node-cluster-setup-in-linux/
+
+#########################################################################################################################
+copy files to multiple servers websphere
+
+How to Install and Configure Cluster with Two Nodes in Linux – Part 2
+https://www.tecmint.com/cman-multi-node-cluster-setup-in-linux/
+
+https://wiki.clusterlabs.org/wiki/Install
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+
+
+Java Interview Questions
+
+https://www.tutorialspoint.com/java/java_interview_questions.htm
+
+Gradle Tutorial
+
+http://www.tutorialspoint.com/gradle/
+
+Maven Interview Questions
+
+https://www.tutorialspoint.com/maven/maven_interview_questions.htm
+

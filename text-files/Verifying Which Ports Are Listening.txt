@@ -1,0 +1,20 @@
+Verifying Which Ports Are Listening
+
+determines which ports are listening for TCP connections from the network:
+
+nmap -sT -O localhost
+
+output of this command looks like the following:
+
+Starting nmap V. 3.00 ( www.insecure.org/nmap/ )
+Interesting ports on localhost.localdomain (127.0.0.1):
+(The 1596 ports scanned but not shown below are in state: closed)
+Port       State       Service
+22/tcp     open        ssh
+111/tcp    open        sunrpc
+515/tcp    open        printer
+834/tcp    open        unknown
+6000/tcp   open        X11
+Remote OS guesses: Linux Kernel 2.4.0 or Gentoo 1.2 Linux 2.4.19 rc1-rc7)
+
+Nmap run completed -- 1 IP address (1 host up) scanned in 5 seconds

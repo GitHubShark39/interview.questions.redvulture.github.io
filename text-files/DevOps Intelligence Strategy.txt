@@ -1,0 +1,30 @@
+
+DevOps Intelligence Strategy
+
+DevOps Intelligence
+True DevOps Intelligence spans time to provide the deepest actionable insight into your software delivery process. 
+You’ll get the best DevOps results by combining detailed metrics on past activity, real-time visibility into present status, 
+and insightful analytics that give early warning of problems and predict future performance.
+
+
+Activity
+What happened in each of our releases? What steps failed? Were releases on time? Who did what and when?
+
+Efficiency
+Is our release velocity improving? Where are we getting stuck or slowing down?
+
+Content
+What features are included in a particular release or in our portfolio of releases?
+
+Status
+What is the real-time status of our releases? What issues are open? Are we on track?
+
+Risk
+What risks may affect our releases (security, compliance, timing, etc.)? Are we following necessary processes?
+
+Impact
+Were the release goals met? How are features being adopted and performing? How is one release comparing to others?
+
+What-if
+What‘s the potential impact of a change? Where might we anticipate problems in future releases?
+

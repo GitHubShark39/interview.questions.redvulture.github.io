@@ -1,0 +1,389 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\*\generator Riched20 10.0.14393}\viewkind4\uc1 
+\pard\sl240\slmult1\f0\fs22\lang9\par
+\par
+MS Azure Interview Questions\par
+\par
+\par
+\par
+In this Azure Interview Questions Blog, following are the sections we have covered:\par
+Section 1: General Cloud Questions\par
+\par
+Section 2: Basic Azure Questions\par
+\par
+Section 3: Azure Interview Questions\par
+\par
+Learn Azure Now!\par
+\par
+Section 1: General Cloud Questions\par
+1. What is Cloud Computing?\par
+\par
+Explanation: It is the use of servers on the internet to \ldblquote store\rdblquote , \ldblquote manage\rdblquote  and \ldblquote process\rdblquote  data. The difference is, instead of using your own servers, you are using someone else\rquote s servers to do your task, paying them for the amount of time you use it for.\par
+\par
+2. What are the different type of services offered in the cloud?\par
+\par
+Explanation:  The different type of services offered in the cloud are:\par
+\par
+IaaS\par
+PaaS\par
+SaaS\par
+IaaS: In infrastructure as a service, you get the raw hardware from your cloud provider as a service i.e you get a server which you can configure with your own qill.\par
+\par
+PaaS: Platform as a Service, gives you a platform to publish without giving the access to the underlying software or OS. For example: Web Apps, Mobile Apps in Azure.\par
+\par
+SaaS: You get software as a service in Azure, i.e no infrastructure, no platform, simple software that you can use without purchasing it. For example: when you launch a VM on Azure, you are not buying the OS, you are basically renting it for the time you will be running that instance.\par
+\par
+3. What are the different cloud deployment models?\par
+\par
+Explanation: Following are the three cloud deployment models:\par
+\par
+Public Cloud: The infrastructure is owned by your cloud provider and the server that you are using could be a multi-tenant system.\par
+\par
+Private Cloud: The infrastructure is owned by you or your cloud provider gives you that service exclusively. For eg: Hosting your website on your servers, or hosting your website with the cloud provider on a dedicated server.\par
+\par
+Hybrid Cloud: When you use both Public Cloud, Private Cloud together, it is called Hybrid Cloud. For Example: Using your in-house servers for confidential data, and the public cloud for hosting your company\rquote s public facing website. This type of setup would be a hybrid cloud.\par
+\par
+4. I have some private servers on my premises, also I have distributed some of my workload on the public cloud, what is this architecture called?\par
+\par
+Virtual Private Network\par
+Private Cloud\par
+Virtual Private Cloud\par
+Hybrid Cloud\par
+Answer: D. Hybrid Cloud\par
+\par
+Explanation: This type of architecture would be a hybrid cloud. Why? Because we are using both, the public cloud, and on premises servers i.e the private cloud. To make this hybrid architecture easy to use, wouldn\rquote t it be better if your private and public cloud were all on the same network (virtually). This is established by including your public cloud servers in a virtual private cloud, and connecting virtual cloud with your on premise servers using a VPN (Virtual Private Network).\par
+\par
+Apart from this Azure Interview Questions Blog, if you want to get trained from professionals on this technology, you can opt for a structured training from edureka! Click below to know more.\par
+\par
+Learn Azure From Professionals\par
+\par
+Section 2: Basic Azure Questions\par
+5. What is Microsoft Azure and why is it used?\par
+\par
+Explanation: As discussed above, the companies which provide the cloud service are called the Cloud Providers. There are a lot of cloud providers out there, out of them one is Microsoft Azure. It is used for accessing Microsoft\rquote s infrastructure for cloud.\par
+\par
+6. Which service in Azure is used to manage resources in Azure?\par
+\par
+Application Insights\par
+Azure Resource Manager\par
+Azure Portal\par
+Log Analytics\par
+Answer: B Azure Resource Manager\par
+\par
+Explanation: Azure Resource Manager is used to \ldblquote manage\rdblquote  infrastructures which involve a no. of azure services. It can be used to deploy, manage and delete all the resources together using a simple JSON script.\par
+\par
+7. Which of the following web applications can be deployed with Azure ?\par
+\par
+ASP.NET\par
+PHP\par
+WCF\par
+All of the mentioned\par
+Answer: D All of the mentioned\par
+\par
+Explanation: Microsoft also has released SDKs for both Java and Ruby to allow applications written in those languages to place calls to the Azure Service Platform API to the AppFabric Service.\par
+\par
+Section 3: Azure Interview Questions\par
+8. What are Roles and why do we use them?\par
+\par
+Explanation: Roles are nothing servers in layman terms. These servers are managed, load balanced, Platform as a Service virtual machines that work together to achieve a common goal.\par
+\par
+There are 3 types of roles in Microsoft Azure:\par
+\par
+Web Role\par
+Worker Role\par
+VM  Role\par
+Let\rquote s discuss each of these roles in detail:\par
+\par
+Web Role \f1\endash  A web role is basically used to deploy a website, using languages supported by the IIS platform like, PHP, .NET etc. It is configured and customized to run web applications.\par
+Worker Role \endash  A worker role is more like an help to the Web role, it used to execute background processes unlike the Web Role which is used to deploy the website.\par
+VM Role \endash  The VM role is used by a user to schedule tasks and other windows services. This role can be used to customize the machines on which the web and worker role is running.\par
+9. A _________ role is a virtual machine instance running Microsoft IIS Web server that can accept and respond to HTTP or HTTPS requests.\par
+\par
+Web\par
+Server\par
+Worker\par
+Client\par
+Answer: A. Web \par
+\par
+Explanation: The answer should be Web Roles, there are no roles such as Server or Client roles. Also, Worker roles can only communicate with Azure Storage or through direct connections to clients.\par
+\par
+Apart from this Azure Interview Questions Blog, if you want to get trained from professionals on this technology, you can opt for a structured training from edureka! Click below to know more.\par
+\par
+Become An Azure Certified Professional!\par
+\par
+10. Is it possible to create a Virtual Machine using Azure Resource Manager in a Virtual Network that was created using classic deployment?\par
+\par
+Explanation: This is not supported. You cannot use Azure Resource Manager to deploy a virtual machine into a virtual network that was created using classic deployment.\par
+\par
+11. What are virtual machine scale sets in Azure?\par
+\par
+Explanation: Virtual machine scale sets are Azure compute resource that you can use to deploy and manage a set of identical VMs. With all the VMs configured the same, scale sets are designed to support true autoscale, and no pre-provisioning of VMs is required. So it\rquote s easier to build large-scale services that target big compute, big data, and containerized workloads.\par
+\par
+12. Are data disks supported within scale sets?\par
+\par
+Explanation: Yes. A scale set can define an attached data disk configuration that applies to all VMs in the set. Other options for storing data include:\par
+\par
+Azure files (SMB shared drives)\par
+OS drive\par
+Temp drive (local, not backed by Azure Storage)\par
+Azure data service (for example, Azure tables, Azure blobs)\par
+External data service (for example, remote database)\par
+13. What is an Availability Set?\par
+\par
+Explanation: An availability set is a logical grouping of VMs that allows Azure to understand how your application is built to provide redundancy and availability. It is recommended that two or more VMs are created within an availability set to provide for a highly available application and to meet the 99.95% Azure SLA. When a single VM is used with Azure Premium Storage, the Azure SLA applies for unplanned maintenance events.\par
+\par
+Apart from this Azure Interview Questions Blog, if you want to get trained from professionals on this technology, you can opt for a structured training from edureka! Click below to know more.\par
+\par
+Learn Azure From Experts!\par
+\par
+14. What are Fault Domains?\par
+\par
+Explanation: A fault domain is a logical group of underlying hardware that share a common power source and network switch, similar to a rack within an on-premise data-centers. As you create VMs within an availability set, the Azure platform automatically distributes your VMs across these fault domains. This approach limits the impact of potential physical hardware failures, network outages, or power interruptions.\par
+\par
+15. What are Update Domains?\par
+\par
+Explanation: An update domain is a logical group of underlying hardware that can undergo maintenance or can be rebooted at the same time. As you create VMs within an availability set, the Azure platform automatically distributes your VMs across these update domains. This approach ensures that at least one instance of your application always remains running as the Azure platform undergoes periodic maintenance. The order of update domains being rebooted may not proceed sequentially during planned maintenance, but only one update domain is rebooted at a time.\par
+\par
+16. What are Network Security Groups?\par
+\par
+Explanation: A network security group (NSG) contains a list of Access Control List (ACL) rules that allow or deny network traffic to subnets, NICs, or both. NSGs can be associated with either subnets or individual NICs connected to a subnet. When an NSG is associated with a subnet, the ACL rules apply to all the VMs in that subnet. In addition, traffic to an individual NIC can be restricted by associating an NSG directly to a NIC.\par
+\par
+17. Do scale sets work with Azure availability sets?\par
+\par
+Explanation: Yes. A scale set is an implicit availability set with 5 fault domains and 5 update domains. Scale sets of more than 100 VMs span multiple placement groups, which are equivalent to multiple availability sets. An availability set of VMs can exist in the same virtual network as a scale set of VMs. A common configuration is to put control node VMs (which often require unique configuration) in an availability set and put data nodes in the scale set.\par
+\par
+18. What is a break-fix issue?\par
+\par
+Explanation: Technical problems are called break-fix issue, it is an industry term which refers to \ldblquote work involved in supporting a technology when it fails in the normal course of its function, which requires intervention by a support organization to be restored to working order\rdblquote .\par
+\par
+19. Why is Azure Active Directory used?\par
+\par
+Explanation: Azure Active Directory is an Identity and Access Management system. It is used to grant access to your employees to specific products and services in your network. For example: Salesforce.com, twitter etc. Azure AD has some in-built support for applications in its gallery which can be added directly.\par
+\par
+20. What happens when you exhaust the maximum failed attempts for authenticating yourself via Azure AD?\par
+\par
+Explanation: We use a more sophisticated strategy to lock accounts. This is based on the IP address of the request and the passwords entered. The duration of the lockout also increases based on the likelihood that it is an attack.\par
+\par
+21. Where can I find a list of applications that are pre-integrated with Azure AD and their capabilities?\par
+\par
+Explanation: Azure AD has around 2600 pre-integrated applications. All pre-integrated applications support single sign-on (SSO). SSO let you use your organizational credentials to access your apps. Some of the applications also support automated provisioning and de-provisioning.\par
+\par
+Apart from this Azure Interview Questions Blog, if you want to get trained from professionals on this technology, you can opt for a structured training from edureka! Click below to know more.\par
+\par
+Get Certified Now!\par
+\par
+22. How can I use applications with Azure AD that I\rquote m using on-premises?\par
+\par
+Explanation: Azure AD gives you an easy and secure way to connect to the web applications you choose. You can access these applications in the same way you access your SaaS apps in Azure AD, no need for a VPN to change your network infrastructure.\par
+\par
+23. What is Azure Service Fabric?\par
+\par
+Explanation: Azure Service Fabric is a distributed systems platform that makes it easy to package, deploy, and manage scalable and reliable micro-services. Service Fabric also addresses the significant challenges in developing and managing cloud applications. Developers and administrators can avoid complex infrastructure problems and focus on implementing mission-critical, demanding workloads that are scalable, reliable, and manageable. Service Fabric represents the next-generation middleware platform for building and managing these enterprise-class, tier-1, cloud-scale applications.\par
+\par
+24. What is a VNet?\par
+\par
+Explanation: VNet is a representation of your own network in the cloud. It logically isolates your instances launched in the cloud, from the rest of your resources.\par
+\par
+25. What are the differences between Subscription Administrator and Directory Administrator?\par
+\par
+Explanation: By default, one is assigned the Subscription Administrator role when he/she signs up for Azure. A subscription admin can use either a Microsoft account or a work or school account from the directory that the Azure subscription is associated with. This role is authorized to manage services in the Azure portal. If others need to sign in and access services by using the same subscription, you can add them as co-admins.\par
+\par
+Azure AD has a different set of admin roles to manage the directory and identity-related features. These admins will have access to various features in the Azure portal or the Azure classic portal. The admin\rquote s role determines what they can do, like create or edit users, assign administrative roles to others, reset user passwords, manage user licenses, or manage domains.\par
+\par
+26. Are there any scale limitations for customers using managed disks?\par
+\par
+Explanation: Managed Disks eliminates the limits associated with storage accounts. However, the number of managed disks per subscription is limited to 2000 by default.\par
+\par
+27. What is the difference between Service Bus Queues and Storage Queues?\par
+\par
+Explanation: The Azure Storage Queue is simple and the developer experience is quite good. It uses the local Azure Storage Emulator and debugging is made quite easy. The tooling for Azure Storage Queues allows you to easily peek at the top 32 messages and if the messages are in XML or Json, you\rquote re able to visualize their contents directly from Visual Studio Furthermore, these queues can be purged of their contents, which is especially useful during development and QA efforts.\par
+\par
+The Azure Service Bus Queues are evolved and surrounded by many useful mechanisms that make it enterprise worthy! They are built into the Service Bus and are able to forward messages to other Queues and Topics. They have a built-in dead-letter queue and messages have a time to live that you control, hence messages don\rquote t automatically disappear after 7 days.\par
+\par
+Furthermore, Azure Service Bus Queues have the ability of deleting themselves after a configurable amount of idle time. This feature is very practical when you create Queues for each user, because if a user hasn\rquote t interacted with a Queue for the past month, it automatically gets clean it up. Its also a great way to drive costs down. You shouldn\rquote t have to pay for storage that you don\rquote t need. These Queues are limited to a maximum of 80gb. Once you\rquote ve reached this limit your application will start receiving exceptions.\par
+\par
+28. What is Azure Redis Cache?\par
+\par
+Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache and message broker. Azure Redis Cache is based on the popular open-source Redis cache. It gives you access to a secure, dedicated Redis cache, managed by Microsoft, and accessible from any application within Azure.  It supports data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs and geospatial indexes with radius queries.\par
+\par
+Apart from this Azure Interview Questions Blog, if you want to get trained from professionals on this technology, you can opt for a structured training from edureka! Click below to know more.\par
+\par
+Learn Azure From Professionals!\par
+\par
+29. Why doesn\rquote t Azure Redis Cache have an MSDN class library reference like some of the other Azure services?\par
+\par
+Explanation: Microsoft Azure Redis Cache is based on the popular open source Redis Cache and can be accessed by a wide variety of Redis clients for many programming languages. Each client has its own API that makes calls to the Redis cache instance using Redis commands.\par
+\par
+Because each client is different, there is not one centralized class reference on MSDN, and each client maintains its own reference documentation. In addition to the reference documentation, there are several tutorials showing how to get started with Azure Redis Cache using different languages and cache clients. To access these tutorials, see How to use Azure Redis Cache and click the desired language from the language switcher at the top of the article.\par
+\par
+30. What are Redis databases?\par
+\par
+Explanation: Redis Databases are just a logical separation of data within the same Redis instance. The cache memory is shared between all the databases and actual memory consumption of a given database depends on the keys/values stored in that database. For example, a C6 cache has 53 GB of memory. You can choose to put all 53 GB into one database or you can split it up between multiple databases.\par
+\par
+31. Is it possible to add an existing VM to an availability set?\par
+\par
+Explanation: No. If you want your VM to be part of an availability set, you need to create the VM within the set. There currently no way to add a VM to an availability set after it has been created.\par
+\par
+32. What are the username requirements when creating a VM?\par
+\par
+Explanation: Usernames can be a maximum of 20 characters in length and cannot end in a period (\ldblquote .\rdblquote ).\par
+\par
+The following usernames are not allowed:\par
+\par
+Prohibited Users - Azure Interview Questions - Edureka\par
+\par
+33. What are the password requirements when creating a VM?\par
+\par
+Explanation: Passwords must be 12 \endash  123 characters in length and meet 3 out of the following 4 complexity requirements:\par
+\par
+Have lower characters\par
+Have upper characters\par
+Have a digit\par
+Have a special character (Regex match [\\W_])\par
+The following passwords are not allowed:\par
+\par
+Passwords Permitted - Azure Interview Questions - Edureka\par
+\par
+Apart from this Azure Interview Questions Blog, if you want to get trained from professionals on this technology, you can opt for a structured training from edureka! Click below to know more.\par
+\par
+Enroll Today Limited Seats!\par
+\par
+34. How much storage can I use with a virtual machine?\par
+\par
+Explanation: Each data disk can be up to 1 TB. The number of data disks which you can use depends on the size of the virtual machine. \par
+\par
+Azure Managed Disks are the new and recommended disk storage offerings for use with Azure Virtual Machines for persistent storage of data. You can use multiple Managed Disks with each Virtual Machine. Managed Disks offer two types of durable storage options: Premium and Standard Managed Disks.\par
+\par
+Azure storage accounts can also provide storage for the operating system disk and any data disks. Each disk is a .vhd file stored as a page blob.\par
+\par
+35. How can one create a Virtual Machine in Powershell?\par
+\par
+# Define a credential object \par
+$cred = Get-Credential \par
+# Create a virtual machine configuration \par
+$vmConfig = New-AzureRmVMConfig -VMName myVM -VMSize Standard_DS2 |\par
+` Set-AzureRmVMOperatingSystem -Windows -ComputerName myVM -Credential $cred | \par
+` Set-AzureRmVMSourceImage -PublisherName MicrosoftWindowsServer -Offer WindowsServer ` \par
+-Skus 2016-Datacenter -Version latest | Add-AzureRmVMNetworkInterface -Id $nic.Id\par
+36. How to create a Network Security Group and a Network Security Group Rule?\par
+\par
+# Create an inbound network security group rule for port 3389\par
+$nsgRuleRDP = New-AzureRmNetworkSecurityRuleConfig -Name myNetworkSecurityGroupRuleRDP -Protocol Tcp `\par
+ -Direction Inbound -Priority 1000 -SourceAddressPrefix * -SourcePortRange * -DestinationAddressPrefix * `\par
+ -DestinationPortRange 3389 -Access Allow\par
+\par
+# Create an inbound network security group rule for port 80\par
+$nsgRuleWeb = New-AzureRmNetworkSecurityRuleConfig -Name myNetworkSecurityGroupRuleWWW -Protocol Tcp `\par
+ -Direction Inbound -Priority 1001 -SourceAddressPrefix * -SourcePortRange * -DestinationAddressPrefix * `\par
+ -DestinationPortRange 80 -Access Allow\par
+\par
+# Create a network security group\par
+$nsg = New-AzureRmNetworkSecurityGroup -ResourceGroupName myResourceGroup -Location EastUS `\par
+ -Name myNetworkSecurityGroup -SecurityRules $nsgRuleRDP,$nsgRuleWeb\par
+\par
+37. How to create a new storage account and container using Power Shell?\par
+\par
+$storageName = "st" + (Get-Random)\par
+New-AzureRmStorageAccount -ResourceGroupName "myResourceGroup" -AccountName $storageName -Location "West US" -SkuName "Standard_LRS" -Kind Storage\par
+$accountKey = (Get-AzureRmStorageAccountKey -ResourceGroupName myResourceGroup -Name $storageName).Value[0]\par
+$context = New-AzureStorageContext -StorageAccountName $storageName -StorageAccountKey $accountKey \par
+New-AzureStorageContainer -Name "templates" -Context $context -Permission Container\par
+38. How can one create a VM in Azure CLI?\par
+\par
+az vm create ` --resource-group myResourceGroup ` --name myVM --image win2016datacenter ` --admin-username azureuser ` --admin-password myPassword12\par
+Apart from this Azure Interview Questions Blog, if you want to get trained from professionals on this technology, you can opt for a structured training from edureka! Click below to know more.\par
+\par
+Learn From Certified Professionals!\par
+\par
+39. What are the various power states of a VM? Power States - Azure Interview Questions - Edureka\par
+\par
+40. How can you retrieve the state of a particular VM?\par
+\par
+Get-AzureRmVM `\par
+ -ResourceGroupName myResourceGroup `\par
+ -Name myVM `\par
+ -Status | Select @\{n="Status"; e=\{$_.Statuses[1].Code\}\}\par
+41. How can you stop a VM using Power Shell?\par
+\par
+Stop-AzureRmVM -ResourceGroupName myResourceGroupVM -Name "myVM" -Force\par
+42. Why was my client disconnected from the cache?\par
+\par
+Explanation: The following are some common reason for a cache disconnect.\par
+\par
+Client-side causes\par
+The client application was redeployed.\par
+The client application performed a scaling operation.\par
+In the case of Cloud Services or Web Apps, this may be due to auto-scaling.\par
+The networking layer on the client side changed.\par
+Transient errors occurred in the client or in the network nodes between the client and the server.\par
+The bandwidth threshold limits were reached.\par
+CPU bound operations took too long to complete.\par
+Server-side causes\par
+On the standard cache offering, the Azure Redis Cache service initiated a fail-over from the primary node to the secondary node.\par
+Azure was patching the instance where the cache was deployed\par
+This can be for Redis server updates or general VM maintenance.\par
+43. What is Azure Search?\par
+\par
+Explanation: Azure Search is a cloud search-as-a-service solution that delegates server and infrastructure management to Microsoft, leaving you with a ready-to-use service that you can populate with your data and then use to add search to your web or mobile application. Azure Search allows you to easily add a robust search experience to your applications using a simple REST API or .NET SDK without managing search infrastructure or becoming an expert in search.\par
+\par
+44. My web app still uses an old Docker container image after I\rquote ve updated the image on Docker Hub. Does Azure support continuous integration/deployment of custom containers?\par
+\par
+Explanation: Yes, it does. For private registries, you can update the container by stopping and then re-starting your web app. Alternatively, you can also change or add a dummy application setting to force an update of your container.\par
+\par
+Apart from this Azure Interview Questions Blog, if you want to get trained from professionals on this technology, you can opt for a structured training from edureka! Click below to know more.\par
+\par
+Get Certified Now!\par
+\par
+45. What are the expected values for the Startup File section when I configure the runtime stack?\par
+\par
+Explanation: For Node.Js, you specify the PM2 configuration file or your script file. For .NET Core, specify your compiled DLL name. For Ruby, you can specify the Ruby script that you want to initialize your app with.\par
+\par
+46. How are Azure Marketplace subscriptions priced?\par
+\par
+Explanation:\par
+\par
+Pricing will vary based on product types. ISV software charges and Azure infrastructure costs are charged separately through your Azure subscription. Pricing models include:\par
+\par
+BYOL Model: Bring-your-own-license. You obtain outside of the Azure Marketplace, the right to access or use the offering and are not charged Azure Marketplace fees for use of the offering in the Azure Marketplace.\par
+\par
+Free: Free SKU. Customers are not charged Azure Marketplace fees for use of the offering.\par
+\par
+Free Software Trial: Full-featured version of the offer that is promotionally free for a limited period of time. You will not be charged Azure Marketplace fees for use of the offering during a trial period. Upon expiration of the trial period, customers will automatically be charged based on standard rates for use of the offering.\par
+\par
+Usage-Based: You are charged or billed based on the extent of your use of the offering. For Virtual Machines Images, you are charged an hourly Azure Marketplace fee. For Data Services, Developer services, and APIs, you are charged per unit of measurement as defined by the offering.\par
+\par
+Monthly Fee: You are charged or billed a fixed monthly fee for a subscription to the offering (from the date of subscription start for that particular plan). The monthly fee is not prorated for mid-month cancellations or unused services.\par
+\par
+47. What is the difference between \ldblquote price,\rdblquote  \ldblquote software price,\rdblquote  and \ldblquote total price\rdblquote  in the cost structure for Virtual Machine offers in the Azure Marketplace?\par
+\par
+Explanation: \ldblquote Price\rdblquote  refers to the cost of the Azure Virtual Machine to run the software. \ldblquote Software price\rdblquote  refers to the cost of the publisher software running on an Azure Virtual Machine. \ldblquote Total price\rdblquote  refers to the combined total cost of the Azure Virtual Machine and the publisher software running on an Azure Virtual Machine.\par
+\par
+48. What are stateful and stateless microservices for Service Fabric?\par
+\par
+Explanation: Service Fabric enables you to build applications that consist of microservices. Stateless microservices (such as protocol gateways and web proxies) do not maintain a mutable state outside a request and its response from the service. Azure Cloud Services worker roles are an example of a stateless service. Stateful microservices (such as user accounts, databases, devices, shopping carts, and queues) maintain a mutable, authoritative state beyond the request and its response. Today\rquote s Internet-scale applications consist of a combination of stateless and stateful microservices.\par
+\par
+49. What is the meaning of application partitions?\par
+\par
+Explanation: The application partitions are a part of the Active Directory system and having said so, they are directory partitions which are replicated to domain controllers. Usually, domain controllers that are included in the process of directory partitions hold a replica of that directory partition. The attributes and values of application partitions is that you can replicated them to any specific domain controller in a forest, meaning that it could lessen replication traffic. While the domain directory partitions transfer all their data to all of the domains, the application partitions can focus on only one in the domain area. This makes application partitions redundant and more available.\par
+\par
+50. What are special Azure Regions?\par
+\par
+Explanation: Azure has some special regions that you may wish to use when buildingyour applications for compliance or legal purposes. These special regions include:\par
+\par
+US Gov Virginia and US Gov Iowa\par
+A physical and logical network-isolated instance of Azure for US government agencies and partners, operated by screened US persons. Includes additional compliance certifications such as FedRAMP and DISA. \par
+China East and China North\par
+These regions are available through a unique partnership between Microsoft and 21Vianet, whereby Microsoft does not directly maintain the datacenters. \par
+Germany Central and Germany Northeast\par
+These regions are available via a data trustee model whereby customer data remains in Germany under control of T-Systems, a Deutsche Telekom company, acting as the German data trustee.\par
+Apart from this Azure Interview Questions Blog, if you want to get trained from professionals on this technology, you can opt for a structured training from edureka! Click below to know more.\par
+\par
+Limited Seats! Enroll Now!\par
+\par
+I hope you enjoyed these Azure Interview Questions. The topics that you learnt in this Azure Interview Questions blog are the most sought-after skill sets that recruiters look for in an Azure Professional. For a detailed study on Azure, you can refer our Azure Tutorial.\par
+\par
+We at edureka! are here to help you with every step on your journey, for becoming a Azure Professional, therefore besides this Azure Interview Questions we have come up with a curriculum which covers exactly what you would need to crack the Azure Exam! You can have a look at the course details for Azure training here. \par
+\par
+Got a question for us? Please mention it in the comments section of this Azure Interview Questions and we will get back to you.\f0\par
+}
+ 

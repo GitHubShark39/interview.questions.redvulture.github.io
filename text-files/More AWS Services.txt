@@ -1,0 +1,14 @@
+More AWS Services
+
+·     AWS Mobile Hub
+·     Amazon API Gateway
+·     Amazon Cognito
+·     AWS Mobile SDK
+·     Amazon SNS
+·     AWS DynamoDB
+·     AWS Key Management Service
+·     AWS Config
+·     AWS Federated Authentication
+
+
+

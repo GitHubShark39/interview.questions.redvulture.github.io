@@ -1,0 +1,19 @@
+Software Development Kits
+
+Evothings Studio
+Android SDK Tools
+Android Studio
+Xamarin
+
+Aptana Studio
+Java SDK
+Php Coder
+Chef Development Kit
+Microsoft Visual Studio 2015
+
+
+Notepad ++
+
+
+
+

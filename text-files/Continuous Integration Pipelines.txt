@@ -1,0 +1,16 @@
+How To Set Up Continuous Integration Pipelines with Concourse CI on Ubuntu 16.04
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-continuous-integration-pipelines-with-concourse-ci-on-ubuntu-16-04
+
+Prerequisites
+Installing the Fly Command Line Tool Locally
+Authenticating with the Concourse Server
+Forking and Cloning the Example Repository
+Setting the Continuous Integration Process for the Application
+Defining the Pipeline
+Defining the Test Task
+Defining the Test Script
+Setting Up the Pipeline in Concourse
+Committing the Changes to Git
+Viewing the New Build
+Conclusion

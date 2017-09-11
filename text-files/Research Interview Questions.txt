@@ -1,0 +1,31 @@
+Research Interview Questions
+
+Linux Administration
+sed
+awg
+cut
+
+Jenkins Deployment Manager
+Tomcat Deployment Manager
+
+Virtual Box commandline commands
+Deploying to tomcat
+Deploying to wildfly
+Deploying to websphere
+
+cgi programming
+virtual host on nginx
+nginx load balancer
+
+how to develop ansible playbooks
+how to develop chef cookbooks
+
+for loops
+what is a linklist
+what is a array
+
+Hp uft test and jenkins
+jenkins post trigger
+Trigger a test after deployment
+
+Sanity testing

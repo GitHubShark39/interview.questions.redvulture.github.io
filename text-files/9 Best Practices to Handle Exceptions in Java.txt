@@ -1,0 +1,24 @@
+9 Best Practices to Handle Exceptions in Java
+
+https://dzone.com/articles/9-best-practices-to-handle-exceptions-in-java?edition=317406&utm_source=Weekly%20Digest&utm_medium=email&utm_campaign=Weekly%20Digest%202017-08-23
+
+1. Clean Up Resources in a Finally Block or Use a Try-With-Resource Statement.
+Use a Finally Block
+Java 7’s Try-With-Resource Statement
+
+2. Prefer Specific Exceptions
+
+3. Document the Exceptions You Specify
+
+4. Throw Exceptions With Descriptive Messages
+
+5. Catch the Most Specific Exception First
+
+6. Don’t Catch Throwable
+
+7. Don’t Ignore Exceptions
+
+8. Don’t Log and Throw
+
+9. Wrap the Exception Without Consuming it
+

@@ -1,0 +1,37 @@
+Git Branching Strategy - Branching Workflows
+
+Git Branching - Branching Workflows
+
+Long-Running Branches
+Topic Branches
+Remote Branches
+
+Pushing
+Tracking Branches
+Pulling
+
+Rebasing
+hot fix branches
+enhancing branches
+
+master
+dev
+
+
+
+
+
+
+
+
+
+
+
+https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows
+http://nvie.com/posts/a-successful-git-branching-model/
+http://stackoverflow.com/questions/2428722/git-branch-strategy-for-small-dev-team
+
+
+
+ SVN Branching Strategy
+

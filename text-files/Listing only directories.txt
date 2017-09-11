@@ -1,0 +1,4 @@
+Listing only directories using ls in bash: An examination
+
+
+ls -d */

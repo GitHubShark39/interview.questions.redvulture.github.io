@@ -1,0 +1,10 @@
+relational database vs nosql
+
+
+What is the difference between a database and a relational database?
+The key difference is that RDBMS (relational database management system) applications 
+store data in a tabular form, while DBMS applications store data as files. Does that 
+mean there are no tables in a DBMS? There can be, but there will be no “relation” 
+between the tables, like in a RDBMS.Aug 24, 2013
+
+

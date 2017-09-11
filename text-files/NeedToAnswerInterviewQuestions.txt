@@ -1,0 +1,44 @@
+elastic ip
+https://en.wikipedia.org/wiki/Amazon_CloudFront
+Is HTTP stateful or stateless?
+Standard RAID levels?
+elastic ip pricing?
+
+GitSvnComparison
+https://git.wiki.kernel.org/index.php/GitSvnComparison
+
+grep - Omitting the first line from any Linux command output
+Removing characters from grep output
+
+Immutable vs Mutable types
+python immutable types
+
+git use to author of a commit
+git config
+
+
+chef default action file
+ruby -c
+https://www.codecademy.com/ko/tracks/ruby
+https://www.ruby-lang.org/en/documentation/quickstart/
+check chef recipe syntax
+https://docs.chef.io/ruby.html
+food critic chef software
+
+What is Amazon cloud’s Lambda and why is it a big deal?
+AWS Lambda
+
+
+set up an s3 endpoint parameters
+
+How do I stop and start EC2 instances at regular intervals using AWS Lambda?
+stop-instances
+Stop and Start Your Instance
+describe-route-tables
+route table aws
+
+
+
+
+
+

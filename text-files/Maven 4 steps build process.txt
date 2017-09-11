@@ -1,0 +1,6 @@
+Maven defines 4 steps of a build process
+
+Lifecycle
+Build Phase
+Plugin
+Goals: The task (action) that executes.

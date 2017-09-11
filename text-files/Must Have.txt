@@ -1,0 +1,21 @@
+Must Have:
+Java/J2EE, Play/Akka Framework, Couchbase, ApacheCamel, Restful Webservices, Websphere/Weblogic App server
+Operations and Integration
+Analytical Ability
+Communications (Listening, Persuasiveness, Oral, Written)
+At least 6-7 years full systems life cycle experience including requirements gathering, functional and technical design, requirements specifications, detail design, program specifications, coding and unit/system testing.
+Strong technical knowledge within specialty.
+Nice to Have:
+Hands on experience with DevOps tools like Docker, Jenkins, GitHub, Maven, JIRA
+SOAP services, Apache Kafka, ServiceNow
+==========================================
+
+Roles and Responsibilities:
+Recommending project standards and guidelines that need to be followed during the overall project life cycle.
+Responsible in enforcing the architecture standards and guidelines during the project life cycle
+Developing the clients mobile technology strategy covering app development approach, devices Matrix, BYOD, backend integration strategy, cloud hosting, networking.
+Providing mobile solution architecture with best suited technologies such as iOS, Android, Hybrid, Xamarin, Kony, mBaaS.
+Interacting with client and conduct technical workshops to capture mobile technical requirements.
+Participate and support mobile solution architecture and technology strategy considering the Business Goals, Enterprise Architecture Principles and Guidelines.
+
+

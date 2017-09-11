@@ -1,0 +1,10 @@
+What is a git bisect?
+You use it by first telling it a "bad" commit that is known to contain the bug, and a "good" commit that is 
+known to be before the bug was introduced. Then git bisect picks a commit between those two endpoints and asks 
+you whether the selected commit is "good" or "bad".
+
+https://git-scm.com/docs/git-bisect
+https://www.metaltoad.com/blog/beginners-guide-git-bisect-process-elimination
+https://robots.thoughtbot.com/git-bisect
+https://git-scm.com/docs/git-bisect
+

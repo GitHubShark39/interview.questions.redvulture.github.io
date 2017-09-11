@@ -1,0 +1,10 @@
+Client is seeking Technology...
+Technical competency in systems administration, user authorization, configuration management tools and network troubleshooting
+Functional Cloud experience 
+Experience in enterprise storage solutions, clustering, filesystems, RAID, Volume Managers.
+Configuration experience (Catchpoint, Zenoss, Nagios, Kibana, Zabbix, Monit, etc)
+Experience coding with one of the following: Perl, Python, PHP, Ruby
+Experience with Linux / Unix
+Chef, Puppet, CFEngine a plus 
+Chase Abernethy
+

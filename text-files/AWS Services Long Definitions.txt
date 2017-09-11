@@ -1,0 +1,92 @@
+
+
+AWS Services Long Definitions
+
+
+AWS services:
+
+
+CodeCommit [X]
+AWS CodeCommit is a version control service hosted by Amazon Web Services that you can 
+use to privately store and manage assets (such as documents, source code, and binary files) 
+in the cloud. 
+
+
+CodeBuild [X]
+AWS CodeBuild is a fully managed build service in the cloud. AWS CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy. AWS CodeBuild eliminates the need to provision, manage, and scale your own build servers. It provides prepackaged build environments for the most popular programming languages and build tools such as Apache Maven, Gradle, and more.
+
+WS CodeBuild provides these benefits:
+
+Fully managed – AWS CodeBuild eliminates the need to set up, patch, update, and manage your own build servers.
+On demand – AWS CodeBuild scales on demand to meet your build needs. You pay only for the number of build minutes you consume.
+Out of the box – AWS CodeBuild provides preconfigured build environments for the most popular programming languages.
+
+
+
+CodePipeline [ ]
+AWS CodePipeline is an Amazon Web Services product that automates the software deployment process, allowing a developer to quickly model, visualize and deliver code for new features and updates. This method is called continuous delivery.
+
+
+CodeDeploy [ ]
+AWS CodeDeploy is a deployment service that automates application deployments to Amazon 
+EC2 instances or on-premises instances in your own facility. ... The service scales with 
+your infrastructure so you can easily deploy to one instance or thousands.
+
+
+CloudFormation [X]
+CloudFormation has two parts: templates and stacks. A template is a JavaScript Object Notation (JSON) 
+text file. The file, which is declarative and not scripted, defines what AWS resources or 
+non-AWS resources are required to run the application.
+
+
+CloudWatch [ ]
+Amazon CloudWatch. Amazon CloudWatch is a monitoring service for AWS cloud resources and the 
+applications you run on AWS. You can use Amazon CloudWatch to collect and track metrics, collect 
+and monitor log files, set alarms, and automatically react to changes in your AWS resources.
+
+
+CloudTrail [ ]
+AWS CloudTrail is an application program interface (API) call-recording and log-monitoring Web 
+service offered by Amazon Web Services (AWS). AWS CloudTrail allows AWS customers to record API 
+calls, sending log files to Amazon S3 buckets 
+
+
+Aws Lambda [ ]
+AWS Lambda is an event-driven, serverless computing platform provided by Amazon as a part of the Amazon Web Services. It is a compute service that runs code in response to events and automatically manages the compute resources required by that code.
+
+
+CloudFoundry [ ]
+
+
+What is Cloudfront?
+Amazon CloudFront is a content delivery network (CDN) offered by Amazon Web Services. Content delivery networks provide a globally-distributed network of proxy servers which cache content, such as web videos or other bulky media, more locally to consumers, thus improving access speed for downloading the content.
+
+What is Amazon IAM?
+AWS Identity and Access Management (IAM) enables you to securely control access to AWS services and resources for your users. Using IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources.
+
+What is IAM policy?
+A policy is a document that formally states one or more permissions. For a complete reference to the IAM policy syntax and grammar, see AWS IAM Policy Reference. Topics. Managed Policies and Inline Policies. Versioning for Managed Policies.
+
+
+AWS CodePipeline vs Jenkins
+
+
+What are the pros and cons of using AWS CodePipeline vs Jenkins?
+
+I can't see a whole lot of info on the interwebs (apart from https://stackshare.io/stackups/jenkins-vs-aws-codepipeline). As far as I can see they are as follows:
+
+AWS CodePipeline Pros
+
+Web-based
+integrated with AWS
+simple to setup (as web-based)
+AWS CodePipeline Cons
+can't be used to set up code repos locally
+
+Jenkins Pros
+
+standalone software
+can be used for many systems (other than AWS)
+many options for setup (e.g. plugins)
+can be used to setup code repos locally
+Any other major differences that people can use to make an informed choice?

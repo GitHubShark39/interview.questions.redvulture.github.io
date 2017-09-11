@@ -1,0 +1,19 @@
+Raid Levels
+
+This article covers the following RAID levels:
+
+RAID 0 – striping
+RAID 1 – mirroring
+RAID 5 – striping with parity
+RAID 6 – striping with double parity
+RAID 10 – combining mirroring and striping
+
+
+http://www.thegeekstuff.com/2010/08/raid-levels-tutorial
+
+https://en.wikipedia.org/wiki/Standard_RAID_levels
+
+https://www.prepressure.com/library/technology/raid
+
+http://www.raid-calculator.com/raid-types-reference.aspx
+

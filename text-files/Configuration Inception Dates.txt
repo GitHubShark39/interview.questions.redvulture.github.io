@@ -1,0 +1,13 @@
+Configuration Inception Dates
+
+ Comparing CFEngine to Alternatives
+2.1 Inception
+• CFEngine was conceived in 1993, with major upgrades in 2001 and 2008.
+• BCFG2 was released in 2004.
+• Puppet was released in 2005, as an offshoot of CFEngine 2.
+• Chef was released in 2009 as an offshoot of Puppet.
+• Bladelogic was founded in September 2001.
+• HP Opsware was founded in September 1999 (as Loudcloud, Inc.).
+• Tivoli Systems was acquired by IBM in 1996 for its storage manager. It is unclear when
+the first provisioning and change management product was released.
+

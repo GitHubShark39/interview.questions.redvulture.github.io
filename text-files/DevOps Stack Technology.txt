@@ -1,0 +1,26 @@
+DevOps Stack Technology
+
+Qualifications
+•   Bachelor’s degree or foreign equivalent required. Will also consider 3 years of relevant work experience in lieu of every year of education
+•   At least 4 years of experience with Information technology.
+•   At least 2 years of experience in Design and implementation of cloud based Migration and consolidation, Continuous Integration (CI), Continuous Delivery (CD) and Tools administration using one or more of the DevOps tools/technologies in each of the below areas –
+•   Project Management & Tracking  - JIRA, Rally
+•   Code Management System -  SVN, GitHub
+•   Build -  Gradle, Ant, Maven
+•   Continuous Integration-  Jenkins, RunDeck
+•   Code Quality -  Sonar, Crucible, JUnit, Jacoco
+•   Repository -  Nexus or Artifactory
+•   Continuous Deployment and configuration management -  Chef, Puppet, CA Release Automation, Ansible, XL-Release, Docker, LARA, Kubernetes
+•   Cloud Computing & Deployment – AWS
+•   Test Automation – HP QTP, Selenium, JMeter, SOAPUI
+•   Team Collaboration -  Confluence
+•   Scripting - Shell scripting, Power Shell, Python
+•   Monitoring: Splunk admin and developer skills
+Operating System - Linux, UNIX, Windows, Redhat
+•   At least 1 years of experience in performing AS-IS Analysis of the SDLC processes, Identifying Gaps, Estimation and defining the roadmap to implement the DevOps solution
+•   At least 1-year experience in Design and Architecture review
+•   Experience in writing scripts to build and deploy to server side environments and to automate logging of build
+•   Experience and ability to drive a project/module independently from an execution stand point
+•   Ability to work in team in diverse/ multiple stakeholder environment
+•   Good Troubleshooting, Analytical, Communication and Client Interfacing skills
+

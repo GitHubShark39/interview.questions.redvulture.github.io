@@ -1,0 +1,31 @@
+ms Azure using Ansible playbooks
+
+Table of Contents
+
+Objectives and initial setup
+
+Introduction to Ansible
+
+Lab 1: Create Control VM using Azure CLI
+
+Lab 2: Create Service Principal
+
+Lab 3: Install Ansible in the provisioning VM
+
+Lab 4: Ansible dynamic inventory for Azure
+
+Lab 5: Creating a VM using an Ansible Playbook
+
+Lab 6: Running an Ansible playbook on the new VM
+
+Lab 7: Running Ansible playbooks periodically for Azure configuration management
+
+Lab 8: Using Ansible with ARM templates for Azure configuration management
+
+Lab 9: Deleting a VM using Ansible - Optional
+
+End the lab
+
+Conclusion
+
+References

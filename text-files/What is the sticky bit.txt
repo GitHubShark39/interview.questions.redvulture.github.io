@@ -1,0 +1,57 @@
+
+
+What is the sticky bit?
+A sticky bit is a permission bit that is set on a directory that allows only the owner of the file within that 
+directory or the root user to delete or rename the file. No other user has the needed privileges to delete the 
+file created by some other user.Jun 14, 2013
+
+What is the sticky bit and why is it used?
+In computing, the sticky bit is a user ownership access right flag that can be assigned to files and 
+directories on Unix-like systems. ... Without the sticky bit set, any user with write and execute permissions 
+for the directory can rename or delete contained files, regardless of the file's owner.
+
+What is Setgid?
+setuid and setgid (short for "set user ID upon execution" and "set group ID upon execution", respectively) 
+are Unix access rights flags that allow users to run an executable with the permissions of the executable's 
+owner or group respectively and to change behaviour in directories.
+
+What is a Suid?
+An "s" in the first position means that the SETUID (or SUID) bit was set (the GUID bit is the same thing, at 
+the group level). Linux runs an executable file with the SETUID bit set with the User ID (that is, the privileges!) 
+of the owner of that file, not the one of the user who launched it.
+
+What is the purpose of the setuid bit on a Linux file?
+Setuid, which stands for set user ID on execution, is a special type of file permission in Unix and Unix-like 
+operating systems such as Linux and BSD. It is a security tool that permits users to run certain programs 
+with escalated privileges.Mar 6, 2015
+
+What does Chown do?
+The chown Command. The chown command is used to change the owner and group of files, directories and links. ... new_owner is the user name or the numeric user ID (UID) of the new owner, and object is the name of the target file, directory or link. The ownership of any number of objects can be changed simultaneously.
+
+What is a chroot?
+Chroot is an operation that changes the apparent root directory for the current running process and their children. A program that is run in such a modified environment cannot access files and commands outside that environmental directory tree. This modified environment is called a chroot jail.
+
+What is Chgrp?
+CHGRP(CHange GRouP) is one more command which is useful to change group associated to a file/folder from one group to other in a Linux box. This is sister command to chown which is used to change owner of the file/folder as well as group name associated with that file.
+
+What is the difference between Suid and SIDS?
+Some others however, use SUID to mean Sudden Unexplained Infant Death. For example when a medical examiner, even after a thorough scene investigation, cannot tell the difference between SIDS and suffocation, they will often use this term to mean it is unexplained.
+
+Sticky bit
+From Wikipedia, the free encyclopedia
+This article is about the filesystem concept. For the technique in floating-point arithmetic, see Floating point § Addition and subtraction.
+
+This article includes a list of references, but its sources remain unclear because it has insufficient inline citations. Please help to improve this article by introducing more precise citations. (September 2014) (Learn how and when to remove this template message)
+In computing, the sticky bit is a user ownership access right flag that can be assigned to files and directories on Unix-like systems.
+
+When a directory's sticky bit is set, the filesystem treats the files in such directories in a special way so only the file's owner, the directory's owner, or root user can rename or delete the file. Without the sticky bit set, any user with write and execute permissions for the directory can rename or delete contained files, regardless of the file's owner. Typically this is set on the /tmp directory to prevent ordinary users from deleting or moving other users' files.
+
+The modern function of the sticky bit was introduced in 4.3BSD[discuss] in 1986, and is found in most modern Unix-like systems.
+
+https://en.wikipedia.org/wiki/Sticky_bit
+http://www.linuxnix.com/sticky-bit-set-linux/
+http://www.thegeekstuff.com/2013/02/sticky-bit/
+https://www.linux.com/blog/what-sticky-bit-and-how-set-it-linux
+
+
+

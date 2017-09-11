@@ -1,0 +1,17 @@
+Build and  Release Engineer
+Encore Software Services,  San Jose, CA Posted 5 hours ago
+Applied  Create Alert  Toggle Dropdown Report a poor listing
+installshield, installanywhere, bitrock, deploy, install, release, shell, devops
+Full Time, Contract W2, Fulltime / Longterm
+Competitive
+Telecommuting not available Travel not required
+Job Description
+
+Job Description:
+
+As a Senior Installer Engineer, you are responsible for creating and supporting our next-gen 
+multiplatform Installers ground-up. We use Bitrock's InstallBuilder tool to create our installers. 
+You are expected to play a pivotal role in creating that seamless and positive first user experience for 
+Automation Anywhere’s portfolio of enterprise products.
+
+Responsibilities:

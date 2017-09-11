@@ -1,0 +1,1305 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.14393}\viewkind4\uc1 
+\pard\sa200\sl240\slmult1\f0\fs22\lang9\par
+\par
+Career Guru99\par
+Top 100 Java Interview Questions with Answers\tab\par
+\par
+\par
+ \par
+Q1. What is the difference between an Inner Class and a Sub-Class?\par
+\par
+Ans: An Inner class is a class which is nested within another class. An Inner class has access rights for the class which is nesting it and it can access all variables and methods defined in the outer class.\par
+\par
+\par
+A sub-class is a class which inherits from another class called super class. Sub-class can access all public and protected methods and fields of its super class.\par
+\par
+Q2. What are the various access specifiers for Java classes?\par
+\par
+Ans: In Java, access specifiers are the keywords used before a class name which defines the access scope. The types of access specifiers for classes are:\par
+\par
+1. Public : Class,Method,Field is accessible from anywhere.\par
+\par
+2. Protected:Method,Field can be accessed from the same class to which they belong or from the sub-classes,and from the class of same package,but not from outside.\par
+\par
+3. Default: Method,Field,class can be accessed only from the same package and not from outside of it\rquote s native package.\par
+\par
+4. Private: Method,Field can be accessed from the same class to which they belong.\par
+\par
+Q3. What\rquote s the purpose of Static methods and static variables?\par
+\par
+Ans: When there is a requirement to share a method or a variable between multiple objects of a class instead of creating separate copies for each object, we use static keyword to make a method or variable shared for all objects.\par
+\par
+Q4. What is data encapsulation and what\rquote s its significance?\par
+\par
+Ans: Encapsulation is a concept in Object Oriented Programming for combining properties and methods in a single unit.\par
+\par
+Encapsulation helps programmers to follow a modular approach for software development as each object has its own set of methods and variables and serves its functions independent of other objects. Encapsulation also serves data hiding purpose.\par
+\par
+\par
+ \par
+\par
+\par
+Q5. What is a singleton class? Give a practical example of its usage.\par
+\par
+A singleton class in java can have only one instance and hence all its methods and variables belong to just one instance. Singleton class concept is useful for the situations when there is a need to limit the number of objects for a class.\par
+\par
+The best example of singleton usage scenario is when there is a limit of having only one connection to a database due to some driver limitations or because of any licensing issues.\par
+\par
+Q6. What are Loops in Java? What are three types of loops?\par
+\par
+Ans: Looping is used in programming to execute a statement or a block of statement repeatedly. There are three types of loops in Java:\par
+\par
+1) For Loops\par
+\par
+For loops are used in java to execute statements repeatedly for a given number of times. For loops are used when number of times to execute the statements is known to programmer.\par
+\par
+2) While Loops\par
+\par
+While loop is used when certain statements need to be executed repeatedly until a condition is fulfilled. In while loops, condition is checked first before execution of statements.\par
+\par
+3) Do While Loops\par
+\par
+Do While Loop is same as While loop with only difference that condition is checked after execution of block of statements. Hence in case of do while loop, statements are executed at least once.\par
+\par
+Q7: What is an infinite Loop? How infinite loop is declared?\par
+\par
+Ans: An infinite loop runs without any condition and runs infinitely. An infinite loop can be broken by defining any breaking logic in the body of the statement blocks.\par
+\par
+Infinite loop is declared as follows:\par
+\par
+\par
+for (;;)\par
+\{\par
+// Statements to execute\par
+// Add any loop breaking logic\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+9\par
+for (;;)\par
+ \par
+\{\par
+ \par
+// Statements to execute\par
+ \par
+// Add any loop breaking logic\par
+ \par
+\}\par
+ \par
+\par
+Q8.  What is the difference between continue and break statement?\par
+\par
+Ans: break and continue are two important keywords used in Loops. When a break keyword is used in a loop, loop is broken instantly while when continue keyword is used, current iteration is broken and loop continues with next iteration.\par
+\par
+In below example, Loop is broken when counter reaches 4.\par
+\par
+\par
+for (counter=0;counter\par
+System.out.println(counter);\par
+if (counter==4) \{\par
+break;\}\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+for (counter=0;counter\par
+System.out.println(counter);\par
+ \par
+if (counter==4) \{\par
+ \par
+break;\}\par
+ \par
+\}\par
+ \par
+\par
+In the below example when counter reaches 4, loop jumps tonext iteration and any statements after the continue keyword are skipped for current iteration.\par
+\par
+\par
+for (counter=0;counter\par
+System.out.println(counter);\par
+if (counter==4) \{\par
+continue;\par
+\}\par
+System.outprintln("This will not get printed when counter is 4");\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+9\par
+10\par
+11\par
+12\par
+for (counter=0;counter\par
+System.out.println(counter);\par
+ \par
+if (counter==4) \{\par
+ \par
+continue;\par
+ \par
+\}\par
+ \par
+System.outprintln("This will not get printed when counter is 4");\par
+ \par
+\}\par
+ \par
+\par
+Q9. What is the difference between double and float variables in Java?\par
+\par
+Ans: In java, float takes 4 bytes in memory while Double takes 8 bytes in memory. Float is single precision floating point decimal number while Double is double precision decimal number.\par
+\par
+Q10.  What is Final Keyword in Java? Give an example.\par
+\par
+Ans: In java, a constant is declared using the keyword Final. Value can be assigned only once and after assignment, value of a constant can\rquote t be changed.\par
+\par
+In below example, a constant with the name const_val is declared and assigned avalue:\par
+\par
+Private Final int const_val=100\par
+\par
+When a method is declared as final,it can NOT  be overridden by the subclasses.This method are faster than any other method,because they are resolved at complied time.\par
+\par
+When a class is declares as final,it cannot be subclassed. Example String,Integer and other wrapper classes.\par
+\par
+Q11. What is ternary operator? Give an example.\par
+\par
+Ans: Ternary operator , also called conditional operator is used to decide which value to assign to a variable based on a Boolean value evaluation. It\rquote s denoted as ?\par
+\par
+In the below example, if rank is 1, status is assigned a value of \ldblquote Done\rdblquote  else \ldblquote Pending\rdblquote .\par
+\par
+\par
+public class conditionTest \{\par
+public static void main(string args[]) \{\par
+String status;\par
+int rank;\par
+status= (rank == 1) ? "Done": "Pending";\par
+\}\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+public class conditionTest \{\par
+public static void main(string args[]) \{\par
+String status;\par
+int rank;\par
+status= (rank == 1) ? "Done": "Pending";\par
+\}\par
+\}\par
+ \par
+\par
+Q12: How can you generate random numbers in Java?\par
+\par
+Ans:\par
+\par
+Using Math.random() you can generate random numbers in the range 0.1 to 1.0\par
+Using Random class in package java.util\par
+Q13. What is default switch case? Give example.\par
+\par
+Ans: In a switch statement, default case is executed when no other switch condition matches. Default case is an optional case .\par
+It can be declared only once all other switch cases have been coded.\par
+\par
+In the below example, when score is not 1 or 2, default case is used.\par
+\par
+\par
+public class switchExample \{\par
+int score=4;\par
+public static void main(String args[]) \{\par
+switch (score) \{\par
+case 1:\par
+System.out.println("Score is 1");\par
+break;\par
+case 2:\par
+system.out.println("Score is 2");\par
+break;\par
+default:\par
+System.out.println("Default Case");\par
+\}\par
+\}\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+9\par
+10\par
+11\par
+12\par
+13\par
+14\par
+15\par
+16\par
+17\par
+public class switchExample \{\par
+int score=4;\par
+public static void main(String args[]) \{\par
+switch (score) \{\par
+case 1:\par
+System.out.println("Score is 1");\par
+break;\par
+case 2:\par
+system.out.println("Score is 2");\par
+break;\par
+default:\par
+System.out.println("Default Case");\par
+\}\par
+ \par
+\}\par
+ \par
+\}\par
+ \par
+\par
+Q14.  What\rquote s the base class in Java from which all classes are derived?\par
+\par
+Ans: java.lang.object\par
+\par
+Q15. Can main() method in Java can return any data?\par
+\par
+Ans: In java, main() method can\rquote t return any data and hence, it\rquote s always declared with a void return type.\par
+\par
+Q16. What are Java Packages? What\rquote s the significance of packages?\par
+\par
+Ans: In Java, package is a collection of classes and interfaces which are bundled together as they are related to each other. Use of packages helps developers to modularize the code and group the code for proper re-use. Once code has been packaged in Packages, it can be imported in other classes and used.\par
+\par
+Q17.  Can we declare a class as Abstract without having any abstract method?\par
+\par
+Ans: Yes we can create an abstract class by using abstract keyword before class name even if it doesn\rquote t have any abstract method. However, if a class has even one abstract method, it must be declared as abstract otherwise it will give an error.\par
+\par
+Q18. What\rquote s the difference between an Abstract Class and Interface in Java?\par
+\par
+Ans: The primary difference between an abstract class and interface is that an interface can only possess declaration of public static methods with no concrete implementation while an abstract class can have members with any access specifiers (public, private etc) with or without concrete implementation.\par
+\par
+Another key difference in the use of abstract classes and interfaces is that a class which implements an interface must implement all the methods of the interface while a class which inherits from an abstract class doesn\rquote t require implementation of all the methods of its super class.\par
+\par
+A class can implement multiple interfaces but it can extend only one abstract class.\par
+\par
+Q19. What are the performance implications of Interfaces over abstract classes?\par
+\par
+Ans:  Interfaces are slower in performance as compared to abstract classes as extra indirections are required for interfaces. Another key factor for developers to take into consideration is that any class can extend only one abstract class while a class can implement many interfaces.\par
+\par
+Use of interfaces also puts an extra burden on the developers as any time an interface is implemented in a class; developer is forced to implement each and every method of interface.\par
+\par
+Q20. Does Importing a package imports its sub-packages as well in Java?\par
+\par
+Ans: In java, when a package is imported, its sub-packages aren\rquote t imported and developer needs to import them separately if required.\par
+\par
+For example, if a developer imports a package university.*, all classes in the package named university are loaded but no classes from the sub-package are loaded. To load the classes from its sub-package ( say department), developer has to import it explicitly as follows:\par
+\par
+Import university.department.*\par
+\par
+Q21. Can we declare the main method of our class as private?\par
+\par
+Ans: In java, main method must be public static in order to run any application correctly. If main method is declared as private, developer won\rquote t get any compilation error however, it will not get executed and will give a runtime error.\par
+\par
+Q22.  How can we pass argument to a function by reference instead of pass by value?\par
+\par
+Ans:  In java, we can pass argument to a function only by value and not by reference.\par
+\par
+Q23. How an object is serialized in java?\par
+\par
+Ans: In java, to convert an object into byte stream by serialization, an interface with the name Serializable is implemented by the class. All objects of a class implementing serializable interface get serialized and their state is saved in byte stream.\par
+\par
+Q24. When we should use serialization?\par
+\par
+Ans: Serialization is used when data needs to be transmitted over the network. Using serialization, object\rquote s state is saved and converted into byte stream .The  byte stream is transferred over the network and the object is re-created at destination.\par
+\par
+Q25. Is it compulsory for a Try Block to be followed by a Catch Block in Java for Exception handling?\par
+\par
+Ans: Try block needs to be followed by either Catch block or Finally block or both. Any exception thrown from try block needs to be either caught in the catch block or else any specific tasks to be performed before code abortion are put in the Finally block.\par
+\par
+Q26. Is there any way to skip Finally block of exception even if some exception occurs in the exception block?\par
+\par
+Ans:  If an exception is raised in Try block, control passes to catch block if it exists otherwise to finally block. Finally block is always executed when an exception occurs and the only way to avoid execution of any statements in Finally block is by aborting the code forcibly by writing following line of code at the end of try block:\par
+\par
+\par
+System.exit(0);\par
+1\par
+System.exit(0);\par
+ \par
+\par
+Q27. When the constructor of a class is invoked?\par
+\par
+Ans: The constructor of a class is invoked every time an object is created with new keyword.\par
+\par
+For example, in the following class two objects are created using new keyword and hence, constructor is invoked two times.\par
+\par
+\par
+public class const_example \{\par
+const_example() \{\par
+System.out.println("Inside constructor");\par
+\}\par
+public static void main(String args[]) \{\par
+const_example c1=new const_example();\par
+const_example c2=new const_example();\par
+\}\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+9\par
+10\par
+11\par
+12\par
+13\par
+14\par
+15\par
+16\par
+17\par
+public class const_example \{\par
+ \par
+const_example() \{\par
+ \par
+System.out.println("Inside constructor");\par
+ \par
+\}\par
+ \par
+public static void main(String args[]) \{\par
+ \par
+const_example c1=new const_example();\par
+ \par
+const_example c2=new const_example();\par
+ \par
+\}\par
+ \par
+\}\par
+ \par
+\par
+Q28. Can a class have multiple constructors?\par
+\par
+Ans: Yes, a class can have multiple constructors with different parameters. Which constructor gets used for object creation depends on the arguments passed while creating the objects.\par
+\par
+Q29. Can we override static methods of a class?\par
+\par
+Ans: We cannot override static methods. Static methods belong to a class and not to individual objects and are resolved at the time of compilation (not at runtime).Even if we try to override static method,we will not get an complitaion error,nor the impact of overriding when running the code.\par
+\par
+Q30. In the below example, what will be the output?\par
+\par
+\par
+public class superclass \{\par
+public void displayResult() \{\par
+System.out.println("Printing from superclass");\par
+\}\par
+\}\par
+public class subclass extends superclass \{\par
+public void displayResult() \{\par
+System.out.println("Displaying from subClass");\par
+super.displayResult();\par
+\}\par
+public static void main(String args[]) \{\par
+subclass obj=new subclass();\par
+obj.displayResult();\par
+\}\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+9\par
+10\par
+11\par
+12\par
+13\par
+14\par
+15\par
+16\par
+17\par
+18\par
+19\par
+20\par
+21\par
+22\par
+23\par
+24\par
+25\par
+26\par
+27\par
+28\par
+29\par
+public class superclass \{\par
+ \par
+public void displayResult() \{\par
+ \par
+System.out.println("Printing from superclass");\par
+ \par
+\}\par
+ \par
+\}\par
+ \par
+public class subclass extends superclass \{\par
+ \par
+public void displayResult() \{\par
+ \par
+System.out.println("Displaying from subClass");\par
+ \par
+super.displayResult();\par
+ \par
+\}\par
+ \par
+public static void main(String args[]) \{\par
+ \par
+subclass obj=new subclass();\par
+ \par
+obj.displayResult();\par
+ \par
+\}\par
+ \par
+\}\par
+ \par
+\par
+Ans: Output will be:\par
+\par
+Displaying from subclass\par
+\par
+Displaying from superclass\par
+\par
+Q31. Is String a data type in java?\par
+\par
+Ans: String is not a primitive data type in java. When a string is created in java, it\rquote s actually an object of Java.Lang.String class that gets created. After creation of this string object, all built-in methods of String class can be used on the string object.\par
+\par
+Q32.  In the below example, how many String Objects are created?\par
+\par
+\par
+String s1="I am Java Expert";\par
+String s2="I am C Expert";\par
+String s3="I am Java Expert";\par
+1\par
+2\par
+3\par
+4\par
+5\par
+String s1="I am Java Expert";\par
+ \par
+String s2="I am C Expert";\par
+ \par
+String s3="I am Java Expert";\par
+ \par
+\par
+Ans: In the above example, two objects of Java.Lang.String class are created. s1 and s3 are references to same object.\par
+\par
+Q33. Why Strings in Java are called as Immutable?\par
+\par
+Ans: In java, string objects are called immutable as once value has been assigned to a string, it can\rquote t be changed and if changed, a new object is created.\par
+\par
+In below example, reference str refers to a string object having value \ldblquote Value one\rdblquote .\par
+\par
+\par
+String str="Value One";\par
+1\par
+String str="Value One";\par
+ \par
+\par
+\par
+ \par
+When a new value is assigned to it, a new String object gets created and the reference is moved to the new object.\par
+\par
+\par
+str="New Value";\par
+1\par
+str="New Value";\par
+ \par
+\par
+Q34. What\rquote s the difference between an array and Vector?\par
+\par
+Ans: An array groups data of same primitive type and is static in nature while vectors are dynamic in nature and can hold data of different data types.\par
+\par
+Q35. What is multi-threading?\par
+\par
+Ans: Multi threading is a programming concept to run multiple tasks in a concurrent manner within a single program. Threads share same process stack and running in parallel. It  helps  in performance improvement of any program.\par
+\par
+Q36. Why Runnable Interface is used in Java?\par
+\par
+Ans: Runnable interface is used in java for implementing multi threaded applications. Java.Lang.Runnable interface is implemented by a class to support multi threading.\par
+\par
+Q37. What are the two ways of implementing multi-threading in Java?\par
+\par
+Ans: Multi threaded applications can be developed in Java by using any of the following two methodologies:\par
+\par
+1. By using Java.Lang.Runnable Interface. Classes implement this interface to enable multi threading. There is a Run() method in this interface which is implemented.\par
+\par
+2. By writing a class that extend Java.Lang.Thread class.\par
+\par
+Q38. When a lot of changes are required in data, which one should be a preference to be used? String or StringBuffer?\par
+\par
+Ans: Since StringBuffers are dynamic in nature and we can change the values of StringBuffer objects unlike String which is immutable, it\rquote s always a good choice to use StringBuffer when data is being changed too much. If we use String in such a case, for every data change a new String object will be created which will be an extra overhead.\par
+\par
+Q39. What\rquote s the purpose of using Break in each case of Switch Statement?\par
+\par
+Ans: Break is used after each case (except the last one) in a switch so that code breaks after the valid case and doesn\rquote t flow in the proceeding cases too.\par
+\par
+If break isn\rquote t used after each case, all cases after the valid case also get executed resulting in wrong results.\par
+\par
+Q40.  How garbage collection is done in Java?\par
+\par
+Ans: In java, when an object is not referenced any more, garbage collection takes place and the object is destroyed automatically. For automatic garbage collection java calls either System.gc() method or Runtime.gc() method.\par
+\par
+Q41. How we can execute any code even before main method?\par
+\par
+Ans: If we want to execute any statements before even creation of objects at load time of class, we can use a static block of code in the class. Any statements inside this static block of code will get executed once at the time of loading the class even before creation of objects in the main method.\par
+\par
+Q42. Can a class be a super class and a sub-class at the same time? Give example.\par
+\par
+Ans: If there is a hierarchy of inheritance used, a class can be a super class for another class and a sub-class for another one at the same time.\par
+\par
+In the example below, continent class is sub-class of world class and it\rquote s super class of country class.\par
+\par
+\par
+public class world \{\par
+..........\par
+\}\par
+public class continenet extends world \{\par
+............\par
+\}\par
+public class country extends continent \{\par
+......................\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+9\par
+10\par
+11\par
+12\par
+13\par
+14\par
+15\par
+16\par
+17\par
+public class world \{\par
+ \par
+..........\par
+ \par
+\}\par
+ \par
+public class continenet extends world \{\par
+ \par
+............\par
+ \par
+\}\par
+ \par
+public class country extends continent \{\par
+ \par
+......................\par
+ \par
+\}\par
+ \par
+\par
+Q43.  How objects of a class are created if no constructor is defined in the class?\par
+\par
+Ans: Even if no explicit constructor is defined in a java class, objects get created successfully as a default  constructor is implicitly used for object creation. This constructor has no parameters.\par
+\par
+Q44.  In multi-threading how can we ensure that a resource isn\rquote t used by multiple threads simultaneously?\par
+\par
+Ans: In multi-threading, access to the resources which are shared among multiple threads can be controlled by using the concept of synchronization. Using synchronized keyword, we can ensure that only one thread can use shared resource at a time and others can get control of the resource only once it has become free from the other one using it.\par
+\par
+Q45. Can we call the constructor of a class more than once for an object?\par
+\par
+Ans:  Constructor is called automatically when we create an object using new keyword. It\rquote s called only once for an object at the time of object creation and hence, we can\rquote t invoke the constructor again for an object after its creation.\par
+\par
+Q46. There are two classes named classA and classB. Both classes are in the same package. Can a private member of classA can be accessed by an object of classB?\par
+\par
+Ans: Private members of a class aren\rquote t accessible outside the scope of that class and any other class even in the same package can\rquote t access them.\par
+\par
+Q47. Can we have two methods in a class with the same name?\par
+\par
+Ans: We can define two methods in a class with the same name but with different number/type of parameters. Which method is to get invoked will depend upon the parameters passed.\par
+\par
+For example in the class below we have two print methods with same name but different parameters. Depending upon the parameters, appropriate one will be called:\par
+\par
+\par
+public class methodExample \{\par
+public void print() \{\par
+System.out.println("Print method without parameters.");\par
+\}\par
+public void print(String name) \{\par
+System.out.println("Print method with paramter");\par
+\}\par
+public static void main(String args[]) \{\par
+methodExample obj1=new methodExample();\par
+obj1.print();\par
+obj1.print("xx");\par
+\}\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+9\par
+10\par
+11\par
+12\par
+13\par
+14\par
+15\par
+16\par
+17\par
+18\par
+19\par
+20\par
+21\par
+22\par
+23\par
+24\par
+25\par
+public class methodExample \{\par
+ \par
+public void print() \{\par
+ \par
+System.out.println("Print method without parameters.");\par
+ \par
+\}\par
+ \par
+public void print(String name) \{\par
+ \par
+System.out.println("Print method with paramter");\par
+ \par
+\}\par
+ \par
+public static void main(String args[]) \{\par
+ \par
+methodExample obj1=new methodExample();\par
+ \par
+obj1.print();\par
+ \par
+obj1.print("xx");\par
+ \par
+\}\par
+ \par
+\}\par
+ \par
+\par
+Q48. How can we make copy of a java object?\par
+\par
+Ans: We can use the concept of cloning to create copy of an object. Using clone, we create copies with the actual state of an object.\par
+\par
+Clone() is a method of Cloneable interface and hence, Cloneable interface needs to be implemented for making object copies.\par
+\par
+Q49. What\rquote s the benefit of using inheritance?\par
+\par
+Ans: Key benefit of using inheritance is reusability of code as inheritance enables sub-classes to reuse the code of its super class. Polymorphism (Extensibility ) is another great benefit which allow new functionality to be introduced without effecting existing derived classes.\par
+\par
+Q50.  What\rquote s the default access specifier for variables and methods of a class?\par
+\par
+Ans: Default access specifier for variables and method is package protected i.e variables and class is available to any other class but in the same package,not outside the package.\par
+\par
+Q51. Give an example of use of Pointers in Java class.\par
+\par
+Ans: There are no pointers in Java. So we can\rquote t use concept of pointers in Java.\par
+\par
+Q52.  How can we restrict inheritance for a class so that no class can be inherited from it?\par
+\par
+Ans: If we want a class not to be extended further by any class, we can use the keyword Final with the class name.\par
+\par
+In the following example, Stone class is Final and can\rquote t be extend\par
+\par
+\par
+<pre><em>\par
+</em>public Final Class Stone \{\par
+// Class methods and Variables\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+<pre><em>\par
+</em>public Final Class Stone \{\par
+ \par
+// Class methods and Variables\par
+ \par
+\}\par
+ \par
+\par
+\par
+\par
+Q53. What\rquote s the access scope of Protected Access specifier?\par
+\par
+Ans: When a method or a variable is declared with Protected access specifier, it becomes accessible in the same class,any other class of the same package as well as a sub-class.\par
+\par
+Access Levels\par
+MODIFIER\tab CLASS\tab PACKAGE\tab SUBCLASS\tab WORLD\par
+public\tab Y\tab Y\tab Y\tab Y\par
+protected\tab Y\tab Y\tab Y\tab N\par
+no modifier\tab Y\tab Y\tab N\tab N\par
+private\tab Y\tab N\tab N\tab N\par
+Q54. What\rquote s difference between Stack and Queue?\par
+\par
+Ans: Stack and Queue both are used as placeholder for a collection of data. The primary difference between a stack and a queue is that stack is based on Last in First out (LIFO) principle while a queue is based on FIFO (First In First Out) principle.\par
+\par
+Q55. In java, how we can disallow serialization of variables?\par
+\par
+Ans: If we want certain variables of a class not to be serialized, we can use the keyword transient while declaring them. For example, the variable trans_var below is a transient variable and can\rquote t be serialized:\par
+\par
+\par
+public class transientExample \{\par
+private transient trans_var;\par
+// rest of the code\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+public class transientExample \{\par
+ \par
+private transient trans_var;\par
+ \par
+// rest of the code\par
+ \par
+\}\par
+ \par
+\par
+Q56.  How can we use primitive data types as objects?\par
+\par
+Ans: Primitive data types like int can be handled as objects by the use of their respective wrapper classes. For example, Integer is a wrapper class for primitive data type int. We can apply different methods to a wrapper class, just like any other object.\par
+\par
+Q57. Which types of exceptions are caught at compile time?\par
+\par
+Ans: Checked exceptions can be caught at the time of program compilation. Checked exceptions must be handled by using try catch block in the code in order to successfully compile the code.\par
+\par
+Q58. Describe different states of a thread.\par
+\par
+Ans: A thread in Java can be in either of the following states:\par
+\par
+Ready: When a thread is created, it\rquote s in Ready state.\par
+Running: A thread currently being executed is in running state.\par
+Waiting: A thread waiting for another thread to free certain resources is in waiting state.\par
+Dead: A thread which has gone dead after execution is in dead state.\par
+Q59. Can we use a default constructor of a class even if an explicit constructor is defined?\par
+\par
+Ans: Java provides a default no argument constructor if no explicit constructor is defined in a Java class. But if an explicit constructor has been defined, default constructor can\rquote t be invoked and developer can use only those constructors which are defined in the class.\par
+\par
+Q60. Can we override a method by using same method name and arguments but different return types?\par
+\par
+Ans: The basic condition of method overriding is that method name, arguments as well as return type must he exactly same as is that of the method being overridden.  Hence using a different return type doesn\rquote t override a method.\par
+\par
+Q61.What will be the output of following piece of code?\par
+\par
+\par
+public class operatorExample \{\par
+public static void main(String args[]) \{\par
+int x=4;\par
+System.out.println(x++);\par
+\}\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+9\par
+10\par
+11\par
+public class operatorExample \{\par
+ \par
+public static void main(String args[]) \{\par
+ \par
+int x=4;\par
+ \par
+System.out.println(x++);\par
+ \par
+\}\par
+ \par
+\}\par
+ \par
+\par
+Ans: In this case postfix ++ operator is used which first returns the value and then increments. Hence it\rquote s output will be 4.\par
+\par
+Q61. A person says that he compiled a java class successfully without even having a main method in it? Is it possible?\par
+\par
+Ans: main method is an entry point of Java class and is required for execution of the program however; a class gets compiled successfully even if it doesn\rquote t have a main method. It can\rquote t be run though.\par
+\par
+Q62.  Can we call a non-static method from inside a static method?\par
+\par
+Ans: Non-Static methods are owned by objects of a class and have object level scope and in order to call the non-Static methods from a static block (like from a static main method), an object of the class needs to be created first. Then using object reference, these methods can be invoked.\par
+\par
+Q63. What are the two environment variables that must be set in order to run any Java programs?\par
+\par
+Ans: Java programs can be executed in a machine only once following two environment variables have been properly set:\par
+\par
+PATH variable\par
+CLASSPATH variable\par
+Q64. Can variables be used in Java without initialization?\par
+\par
+Ans: In Java, if a variable is used in a code without prior initialization by a valid value, program doesn\rquote t compile and gives an error as no default value is assigned to variables in Java.\par
+\par
+Q65. Can a class in Java be inherited from more than one class?\par
+\par
+Ans: In Java, a class can be derived from only one class and not from multiple classes. Multiple inheritances is not supported by Java.\par
+\par
+Q66. Can a constructor have different name than a Class name in Java?\par
+\par
+Ans: Constructor in Java must have same name as the class name and if the name is different, it doesn\rquote t act as a constructor and compiler thinks of it as a normal method.\par
+\par
+Q67. What will be the output of Round(3.7) and Ceil(3.7)?\par
+\par
+Ans: Round(3.7) returns 4 and  Ceil(3.7) returns 4.\par
+\par
+Q68: Can we use goto in Java to go to a particular line?\par
+\par
+Ans: In Java, there is not goto keyword and java doesn\rquote t support this feature of going to a particular labeled line.\par
+\par
+Q69. Can a dead thread be started again?\par
+\par
+Ans: In java, a thread which is in dead state can\rquote t be started again. There is no way to restart a dead thread.\par
+\par
+Q70. Is the following class declaration correct?\par
+\par
+Ans:\par
+\par
+\par
+public abstract final class testClass \{\par
+// Class methods and variables\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+public abstract final class testClass \{\par
+ \par
+// Class methods and variables\par
+ \par
+\}\par
+ \par
+\par
+Ans: The above class declaration is incorrect as an abstract class can\rquote t be declared as Final.\par
+\par
+Q71. Is JDK required on each machine to run a Java program?\par
+\par
+Ans: JDK is development Kit of Java and is required for development only and to run a Java program on a machine, JDK isn\rquote t required. Only JRE is required.\par
+\par
+Q72. What\rquote s the difference between comparison done by equals method and == operator?\par
+\par
+Ans: In Java, equals() method is used to compare the contents of two string objects and returns true if the two have same value while == operator compares the references of two string objects.\par
+\par
+In the following example, equals() returns true as the two string objects have same values. However == operator returns false as both string objects are referencing to different objects:\par
+\par
+\par
+public class equalsTest \{\par
+public static void main(String args[]) \{\par
+String srt1="Hello World";\par
+String str2="Hello World";\par
+if (str1.equals(str2))\par
+\{// this condition is true\par
+System.out.println("str1 and str2 are equal in terms of values");\par
+\}\par
+if (str1==str2) \{\par
+//This condition is not true\par
+System.out.println("Both strings are referencing same object");\par
+\}\par
+else\par
+\{\par
+// This condition is true\par
+System.out.println("Both strings are referencing different objects");\par
+\}\par
+\}\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+9\par
+10\par
+11\par
+12\par
+13\par
+14\par
+15\par
+16\par
+17\par
+18\par
+19\par
+20\par
+21\par
+22\par
+23\par
+24\par
+25\par
+26\par
+27\par
+28\par
+29\par
+30\par
+31\par
+32\par
+33\par
+34\par
+35\par
+public class equalsTest \{\par
+ \par
+public static void main(String args[]) \{\par
+ \par
+String srt1="Hello World";\par
+ \par
+String str2="Hello World";\par
+ \par
+if (str1.equals(str2))\par
+ \par
+\{// this condition is true\par
+ \par
+System.out.println("str1 and str2 are equal in terms of values");\par
+ \par
+\}\par
+ \par
+if (str1==str2) \{\par
+ \par
+//This condition is not true\par
+ \par
+System.out.println("Both strings are referencing same object");\par
+ \par
+\}\par
+ \par
+else\par
+ \par
+\{\par
+ \par
+// This condition is true\par
+ \par
+System.out.println("Both strings are referencing different objects");\par
+ \par
+\}\par
+ \par
+\}\}\par
+ \par
+\par
+Q73. Is it possible to define a method in Java class but provide it\rquote s implementation in the code of another language like C?\par
+\par
+Ans: Yes, we can do this by use of native methods. In case of native method based development, we define public static methods in our Java class without its implementation and then implementation is done in another language like C separately.\par
+\par
+Q74.  How destructors are defined in Java?\par
+\par
+Ans: In Java, there are no destructors defined in the class as there is no need to do so. Java has its own garbage collection mechanism which does the job automatically by destroying the objects when no longer referenced.\par
+\par
+Q75. Can a variable be local and static at the same time?\par
+\par
+Ans:  No a variable can\rquote t be static as well as local at the same time. Defining a local variable as static gives compilation error.\par
+\par
+Q76. Can we have static methods in an Interface?\par
+\par
+Ans: Static methods can\rquote t be overridden in any class while any methods in an interface are by default abstract and are supposed to be implemented in the classes being implementing the interface. So it makes no sense to have static methods in an interface in Java.\par
+\par
+Q77. In a class implementing an interface, can we change the value of any variable defined in the interface?\par
+\par
+Ans: No, we can\rquote t change the value of any variable of an interface in the implementing class as all variables defined in the interface are by default public, static and Final and final variables are like constants which can\rquote t be changed later.\par
+\par
+Q78. Is it correct to say that due to garbage collection feature in Java, a java program never goes out of memory?\par
+\par
+Ans: Even though automatic garbage collection is provided by Java, it doesn\rquote t ensure that a Java program will not go out of memory as there is a possibility that creation of Java objects is being done at a faster pace compared to garbage collection resulting in filling of all the available memory resources.\par
+\par
+So, garbage collection helps in reducing the chances of a program going out of memory but it doesn\rquote t ensure that.\par
+\par
+Q79. Can we have any other return type than void for main method?\par
+\par
+Ans: No, Java class main method can have only void return type for the program to get successfully executed.\par
+\par
+Nonetheless , if you absolutely must return a value to at the completion of main method , you can use System.exit(int status)\par
+\par
+Q80. I want to re-reach and use an object once it has been garbage collected. How it\rquote s possible?\par
+\par
+Ans: Once an object has been destroyed by garbage collector, it no longer exists on the heap and it can\rquote t be accessed again. There is no way to reference it again.\par
+\par
+Q81. In Java thread programming, which method is a must implementation for all threads?\par
+\par
+Ans: Run() is a method of Runnable interface that must be implemented by all threads.\par
+\par
+Q82. I want to control database connections in my program and want that only one thread should be able to make database connection at a time. How can I implement this logic?\par
+\par
+Ans: This can be implemented by use of the concept of synchronization. Database related code can be placed in a method which hs synchronized keyword so that only one thread can access it at a time.\par
+\par
+Q83. How can an exception be thrown manually by a programmer?\par
+\par
+Ans: In order to throw an exception in a block of code manually, throw keyword is used. Then this exception is caught and handled in the catch block.\par
+\par
+\par
+public void topMethod()\{\par
+try\{\par
+excMethod();\par
+\}catch(ManualException e)\{ \}\par
+\}\par
+public void excMethod\{\par
+String name=null;\par
+if(name == null)\{\par
+throw (new ManualException("Exception thrown manually ");\par
+\}\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+9\par
+10\par
+11\par
+12\par
+public void topMethod()\{\par
+try\{\par
+excMethod();\par
+\}catch(ManualException e)\{ \}\par
+\}\par
+ \par
+public void excMethod\{\par
+String name=null;\par
+if(name == null)\{\par
+throw (new ManualException("Exception thrown manually ");\par
+\}\par
+\}\par
+ \par
+\par
+Q84.  I want my class to be developed in such a way that no other class (even derived class) can create its objects. How can I do so?\par
+\par
+Ans: If we declare the constructor of a class as private, it will not be accessible by any other class and hence, no other class will be able to instantiate it and formation of its object will be limited to itself only.\par
+\par
+Q85. How objects are stored in Java?\par
+\par
+Ans: In java, each object when created gets a memory space from a heap. When an object is destroyed by a garbage collector, the space allocated to it from the heap is re-allocated to the heap and becomes available for any new objects.\par
+\par
+Q86. How can we find the actual size of an object on the heap?\par
+\par
+Ans: In java, there is no way to find out the exact size of an object on the heap.\par
+\par
+Q87. Which of the following classes will have more memory allocated?\par
+\par
+Class A: Three methods, four variables, no object\par
+\par
+Class B: Five methods, three variables, no object\par
+\par
+Ans:  Memory isn\rquote t allocated before creation of objects. Since for both classes, there are no objects created so no memory is allocated on heap for any class.\par
+\par
+Q88. What happens if an exception is not handled in a program?\par
+\par
+Ans: If an exception is not handled in a program using try catch blocks, program gets aborted and no statement executes after the statement which caused exception throwing.\par
+\par
+Q89.  I have multiple constructors defined in a class. Is it possible to call a constructor from another constructor\rquote s body?\par
+\par
+Ans: If a class has multiple constructors, it\rquote s possible to call one constructor from the body of another one using this().\par
+\par
+Q90. What\rquote s meant by anonymous class?\par
+\par
+Ans: An anonymous class is a class defined without any name in a single line of code using new keyword.\par
+\par
+For example, in below code we have defined an anonymous class in one line of code:\par
+\par
+\par
+public java.util.Enumeration testMethod()\par
+\{\par
+return new java.util.Enumeration()\par
+\{\par
+@Override\par
+public boolean hasMoreElements()\par
+\{\par
+// TODO Auto-generated method stub\par
+return false;\par
+\}\par
+@Override\par
+public Object nextElement()\par
+\{\par
+// TODO Auto-generated method stub\par
+return null;\par
+\}\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+9\par
+10\par
+11\par
+12\par
+13\par
+14\par
+15\par
+16\par
+17\par
+18\par
+19\par
+20\par
+21\par
+22\par
+23\par
+24\par
+25\par
+26\par
+27\par
+28\par
+29\par
+30\par
+31\par
+32\par
+33\par
+public java.util.Enumeration testMethod()\par
+ \par
+\{\par
+ \par
+return new java.util.Enumeration()\par
+ \par
+\{\par
+ \par
+@Override\par
+ \par
+public boolean hasMoreElements()\par
+ \par
+\{\par
+ \par
+// TODO Auto-generated method stub\par
+ \par
+return false;\par
+ \par
+\}\par
+ \par
+@Override\par
+ \par
+public Object nextElement()\par
+ \par
+\{\par
+ \par
+// TODO Auto-generated method stub\par
+ \par
+return null;\par
+ \par
+\}\par
+ \par
+\}\par
+ \par
+\par
+ \par
+\par
+Q91. Is there a way to increase the size of an array after its declaration?\par
+\par
+Ans: Arrays are static and once we have specified its size, we can\rquote t change it. If we want to use such collections where we may require a change of size ( no of items), we should prefer vector over array.\par
+\par
+Q92. If an application has multiple classes in it, is it okay to have a main method in more than one class?\par
+\par
+Ans:  If there is main method in more than one classes in a java application, it won\rquote t cause any issue as entry point for any application will be a specific class and code will start from the main method of that particular class only.\par
+\par
+Q93. I want to persist data of objects for later use. What\rquote s the best approach to do so?\par
+\par
+Ans: The best way to persist data for future use is to use the concept of serialization.\par
+\par
+Q94. What is a Local class in Java?\par
+\par
+Ans: In Java, if we define a new class inside a particular block, it\rquote s called a local class. Such a class has local scope and isn\rquote t usable outside the block where its defined.\par
+\par
+Q95. String and StringBuffer both represent String objects. Can we compare String and StringBuffer in Java?\par
+\par
+Ans: Although String and StringBuffer both represent String objects, we can\rquote t compare them with each other and if we try to compare them, we get an error.\par
+\par
+Q96. Which API is provided by Java for operations on set of objects?\par
+\par
+Ans: Java provides a Collection API which provides many useful methods which can be applied on a set of objects. Some of the important classes provided by Collection API include ArrayList, HashMap, TreeSet and TreeMap.\par
+\par
+Q97. Can we cast any other type to Boolean Type with type casting?\par
+\par
+Ans: No, we can neither cast any other primitive type to Boolean data type nor can cast Boolean data type to any other primitive data type.\par
+\par
+Q98.  Can we use different return types for methods when overridden?\par
+\par
+Ans: The basic requirement of method overriding in Java is that the overridden method should have same name,  and parameters.But a method can be overridden with a different return type as long as the new return type extends the original.\par
+\par
+For example , method is returning a reference type.\par
+\par
+\par
+Class B extends A\{\par
+A method(int x)\{\par
+//original method\par
+\}\par
+B method(int x)\{\par
+//overridden method\par
+\}\par
+\}\par
+1\par
+2\par
+3\par
+4\par
+5\par
+6\par
+7\par
+8\par
+9\par
+10\par
+11\par
+12\par
+13\par
+14\par
+15\par
+Class B extends A\{\par
+ \par
+A method(int x)\{\par
+ \par
+//original method\par
+ \par
+\}\par
+ \par
+B method(int x)\{\par
+ \par
+//overridden method\par
+ \par
+\}\par
+ \par
+\}\par
+ \par
+\par
+Q99. What\rquote s the base class of all exception classes?\par
+\par
+Ans: In Java, Java.Lang.throwable is the super class of all exception classes and all exception classes are derived from this base class.\par
+\par
+Q100. What\rquote s the order of call of constructors in inheritiance?\par
+\par
+Ans: In case of inheritance, when a new object of a derived class is created, first the constructor of the super class is invoked and then the constructor of the derived class is invoked.\par
+}
+ 

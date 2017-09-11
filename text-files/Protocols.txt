@@ -1,0 +1,1 @@
+General understanding of communication protocols (HTTP, SOAP, REST, etc.).

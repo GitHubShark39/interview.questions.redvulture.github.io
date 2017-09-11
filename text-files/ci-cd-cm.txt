@@ -1,0 +1,69 @@
+
+
+What is CI?
+
+What is a continuous integration tool?
+Continuous integration (CI) is an integral part of an agile software development 
+setup. ... To stop such errors from being integrated into the software configuration 
+management (SCM), a CI server is the gatekeeper that helps keep a tab on code quality.
+Jul 29, 2015
+
+Continuous delivery (CD) is a software engineering approach in which teams produce 
+software in short cycles, ensuring that the software can be reliably released at 
+any time. It aims at building, testing, and releasing software faster and more 
+frequently.
+
+What is continuous development?
+Continuous software development is an umbrella term that describes several aspects of 
+iterative software application development, including continuous integration, 
+continuous delivery, continuous testing and continuous deployment.
+
+What is continuous delivery in agile?
+Continuous Delivery (CD) is the application development discipline that takes Agile 
+to its logical conclusion, creating software that is always ready to release. It does 
+this by building upon and extending Agile, CI and DevOps practices and tools to 
+transform the way software is delivered.
+
+What is a continuous delivery pipeline?
+Continuous Delivery (CD) is a software strategy that enables organizations to deliver 
+new features to users as fast and efficiently as possible. ... The pipeline breaks down 
+the software delivery process into stages.Jul 29, 2014
+
+What is Cicd?
+Clearly, all five are important to get right, but all too easy to get wrong. 
+In particular, continuous integration and continuous delivery (CICD) may be the 
+most difficult devops moves to master. Continuous integration (CI) is a process in 
+which developers and testers collaboratively validate new code.
+
+What is continuous integration and continuous delivery?
+Continuous delivery. ... Continuous delivery (CD) is a software engineering approach 
+in which teams produce software in short cycles, ensuring that the software can be 
+reliably released at any time. It aims at building, testing, and releasing software 
+faster and more frequently.
+
+What is continuous deployment?
+Continuous deployment is a strategy for software releases wherein any commit that 
+passes the automated testing phase is automatically released into the production 
+deployment.J
+
+What is Jenkins for?
+jenkins.io. Jenkins is an open source automation server written in Java. The project 
+was forked from Hudson after a dispute with Oracle. ... It is a server-based system 
+running in a servlet container such as Apache Tomcat.
+
+What is bitbucket pipelines?
+Bitbucket Cloud is introducing Pipelines to let your team build, test, and deploy from
+ Bitbucket. It is built right within Bitbucket, giving you end-to-end visibility from 
+coding to deployment. With Bitbucket Pipelines there's no CI server to setup, user 
+management to configure, or repositories to synchronize.May 24, 2016
+
+What is Amazon code deploy?
+AWS CodeDeploy is a deployment service that automates application deployments to 
+Amazon EC2 instances or on-premises instances in your own facility. ... The service 
+scales with your infrastructure so you can easily deploy to one instance or thousands.
+
+What is pipeline as code?
+Pipeline as Code describes a set of features that allow Jenkins users to define pipelined job processes with code, stored and versioned in a source repository.
+
+What is bitbucket server?
+Bitbucket Server (formerly known as Stash) is a combination Git server and web interface product. It allows users to do basic Git operations (such as reviewing or merging code, similar to GitHub) while controlling read and write access to the code. It also provides integration with other Atlassian tools.

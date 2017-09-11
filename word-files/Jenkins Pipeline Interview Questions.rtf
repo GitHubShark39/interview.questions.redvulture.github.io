@@ -1,0 +1,160 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.14393}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\par
+\par
+\par
+Jenkins Pipeline\par
+\par
+What is Pipeline?\par
+Jenkins Pipeline is a suite of plugins which supports implementing and integrating continuous delivery pipelines into Jenkins. Pipeline provides an extensible set of tools for modeling simple-to-complex delivery pipelines "as code" via the Pipeline DSL. [1]\par
+\par
+Why Pipeline?\par
+Jenkins is, fundamentally, an automation engine which supports a number of automation patterns. Pipeline adds a powerful set of automation tools onto Jenkins, supporting use cases that span from simple continuous integration to comprehensive continuous delivery pipelines. By modeling a series of related tasks, users can take advantage of the many features of Pipeline:\par
+\par
+Code: Pipelines are implemented in code and typically checked into source control, giving teams the ability to edit, review, and iterate upon their delivery pipeline.\par
+Durable: Pipelines can survive both planned and unplanned restarts of the Jenkins master.\par
+Pausable: Pipelines can optionally stop and wait for human input or approval before continuing the Pipeline run.\par
+Versatile: Pipelines support complex real-world continuous delivery requirements, including the ability to fork/join, loop, and perform work in parallel.\par
+Extensible: The Pipeline plugin supports custom extensions to its DSL [1] and multiple options for integration with other plugins.\par
+While Jenkins has always allowed rudimentary forms of chaining Freestyle Jobs together to perform sequential tasks, [2] Pipeline makes this concept a first-class citizen in Jenkins.\par
+\par
+Pipeline Terms\par
+Step\par
+A single task; fundamentally steps tell Jenkins what to do. For example, to execute the shell command make use the sh step: sh 'make'. When a plugin extends the Pipeline DSL, that typically means the plugin has implemented a new step.\par
+\par
+Node\par
+Most work a Pipeline performs is done in the context of one or more declared node steps. Confining the work inside of a node step does two things:\par
+\par
+Schedules the steps contained within the block to run by adding an item to the Jenkins queue. As soon as an executor is free on a node, the steps will run.\par
+Creates a workspace (a directory specific to that particular Pipeline) where work can be done on files checked out from source control.\par
+Depending on your Jenkins configuration, some workspaces may not get automatically cleaned up after a period of inactivity. See tickets and discussion linked from JENKINS-2111 for more information.\par
+Stage\par
+stage is a step for defining a conceptually distinct subset of the entire Pipeline, for example: "Build", "Test", and "Deploy", which is used by many plugins to visualize or present Jenkins Pipeline status/progress. [4]\par
+\par
+1. Domain-Specific Language\par
+2. Additional plugins have been used to implement complex behaviors utilizing Freestyle Jobs such as the Copy Artifact, Parameterized Trigger, and Promoted Builds plugins\par
+3. plugin:github-organization-folder[GitHub Organization Folder plugin\par
+4. Blue Ocean, Pipeline Stage View plugin\par
+\par
+op 10 Best Practices for Jenkins Pipeline Plugin\par
+\par
+apemberton - 27 Jun 2016\par
+\par
+inShare\par
+355\par
+The Jenkins Pipeline plugin is a game changer for Jenkins users. Based on a Domain Specific Language (DSL) in Groovy, the Pipeline plugin makes pipelines scriptable and it is an incredibly powerful way to develop complex, multi-step DevOps pipelines. This document captures some definite Do\rquote s and Don\rquote ts of writing Jenkins Pipelines - with code examples and explanations.\par
+\par
+\par
+\par
+1. Do: Use the real Jenkins Pipeline\par
+Don\rquote t use older plugins like Build Pipeline plugin or Buildflow plugin. Instead, use the real Jenkins Pipeline suite of plugins.\par
+\par
+Why? The Pipeline plugin is a step change improvement in the underlying job itself. Unlike freestyle jobs, Pipeline is resilient to Jenkins master restarts and also has` built-in features that supersede many older plugins previously used to build multi-step, complex delivery pipelines.\par
+More information on getting started is available at {{\field{\*\fldinst{HYPERLINK https://jenkins.io/solutions/pipeline/ }}{\fldrslt{https://jenkins.io/solutions/pipeline/\ul0\cf0}}}}\f0\fs22 .\par
+\par
+2. Do: Develop your pipeline as code\par
+Use the feature to store your Jenkinsfile in SCM then version and test it like you do other software.\par
+\par
+Why? Treating your pipeline as code enforces good discipline and also opens up a new world of features and capabilities like multi-branch, pull request detection and organization scanning for GitHub and BitBucket.\par
+\par
+\par
+You should also call your Pipeline script the default name: Jenkinsfile and start the following script header, so your IDE, GitHub and other tooling recognize it as Groovy and enable code highlighting:\par
+\par
+#!groovy\u8203?\par
+\u8203?3. Do: All work within a stage\par
+Any non-setup work within your pipeline should occur within a stage block.\par
+\par
+Why? Stages are the logical segmentation of a pipeline. Separating work into stages allows separating your pipeline into distinct segments of work.\par
+Example:\par
+\par
+stage 'build'\par
+//build\par
+stage 'test'\par
+//test\par
+And better still: the Pipeline Stage View plugin visualizes stages as unique segments of the pipeline:\par
+\par
+\par
+\par
+4. Do: All material work within a node\par
+Any material work within a pipeline should occur within a node block.\par
+\par
+Why? By default, the Jenkinsfile script itself runs on the Jenkins master, using a lightweight executor expected to use very few resources. Any material work, like cloning code from a Git server or compiling a Java application, should leverage Jenkins distributed builds capability and run an agent node.\par
+Example:\par
+\par
+stage 'build'\par
+node\{\par
+    checkout scm\par
+    sh 'mvn clean install'\par
+\}\par
+5. Do: Work you can within a parallel step\par
+Pipeline offers a straight-forward syntax for branching your pipeline into parallel steps. Use it!\par
+\par
+Why? Branching work in parallel will allow your pipeline to run faster, shifting your pipeline steps to the left, and getting feedback to developers and the rest of your team faster.\par
+Example:\par
+\par
+parallel 'shifting':\{\par
+    //everything\par
+\}, 'left':\{\par
+    //I can\par
+\}\par
+Bonus tip: use the Parallel Test Executor plugin to have Jenkins automatically determine how to run your xUnit compatible tests in optimally parallel buckets! Read more information on Parallel Test Execution on the CloudBees Blog.\par
+\par
+6. Do: Acquire nodes within parallel steps\par
+Why? One of the main benefits of parallelism in a pipeline is: to do more material work (see Best Practice #4)! You should generally aim to acquire a node within the parallel branches of your pipeline.\par
+\par
+Example:\par
+\par
+parallel 'integration-tests':\{\par
+    node('mvn-3.3')\{ ... \}\par
+\}, 'functional-tests':\{\par
+    node('selenium')\{ ... \}\par
+\}\par
+7. Don\rquote t: Use input within a node block\par
+While you can put an input statement within a node block, you definitely shouldn\rquote t.\par
+\par
+Why? The input element pauses pipeline execution to wait for an approval - either automated or manual. Naturally these approvals could take some time. The node element, on the other hand, acquires and holds a lock on a workspace and heavy weight Jenkins executor - an expensive resource to hold onto while pausing for input.\par
+So, create your inputs outside your nodes.\par
+\par
+Example:\par
+\par
+stage 'deployment'\par
+input 'Do you approve deployment?'\par
+node\{\par
+    //deploy the things\par
+\}\par
+8. Do: Wrap your inputs in a timeout\par
+Pipeline has an easy mechanism for timing out any given step of your pipeline. As a best practice, you should always plan for timeouts around your inputs.\par
+\par
+Why? For healthy cleanup of the pipeline, that\rquote s why. Wrapping your inputs in a timeout will allow them to be cleaned-up (i.e., aborted) if approvals don\rquote t occur within a given window.\par
+Example:\par
+\par
+timeout(time:5, unit:'DAYS') \{\par
+    input message:'Approve deployment?', submitter: 'it-ops'\par
+\}\par
+9. Don\rquote t: Set environment variables with env global variable\par
+While you can edit some settings in the env global variable, you should use the withEnv syntax instead.\par
+\par
+Why? because the env variable is global, changing it directly is discouraged as it changes the environment globally, so the withEnv syntax is recommended.\par
+Example:\par
+\par
+withEnv(["PATH+MAVEN=$\{tool 'm3'\}/bin"]) \{\par
+    sh "mvn clean verify"\par
+\}\par
+10. Do: Prefer stashing files to archiving\par
+Before the stash capability was added to Pipeline DSL, archives were the best way to share files between nodes or stages in a pipeline. If you just need to share files between stages and nodes of your pipeline, you should use stash/unstash instead of archive.\par
+\par
+Why? Stash and unstash are designed for sharing files, for example your application\rquote s source code, between stages and nodes. Archives, on the other hand, are designed for longer term file storage (e.g., intermediate binaries from your builds).\par
+Example:\par
+\par
+stash excludes: 'target/', name: 'source'\par
+unstash 'source'\par
+Summary\par
+Thanks for reading! The new Jenkins Pipeline plugin is gaining more and more traction, especially with the launch of Jenkins 2.0. I\rquote m sure there will be more and more best practices to come as developers across the world develop their DevOps pipelines with Jenkins. We will post follow-up blogs and more examples soon!\par
+\par
+ \par
+Blog Categories: \par
+Blog Posts about Jenkins\par
+Blog Posts about Developer Zone\par
+}
+ 

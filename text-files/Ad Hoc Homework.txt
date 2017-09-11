@@ -1,0 +1,29 @@
+Ad Hoc Homework
+
+
+
+? Reply above this line
+Hi Royal!
+Thanks so much for your interest in joining Ad Hoc. We grew from the original rescue effort of healthcare.gov to a 
+team dedicated to improving the services that the government provides to people.
+I know you’ve invested time and attention into this application, and I want to let you know that we will do the same. 
+We want the people we hire to have as much impact as the services we build.
+We don’t shy away from having a highly selective application process, and you'll talk to a lot of people. 
+We don’t want to hire you for a project, we want to hire you for a career.
+
+Since we're a remote company and don't do in-person interviews, the first step in our technical interview process is our 
+coding challenge: https://github.com/adhocteam/adhoc_homework.
+
+If you have any questions, If you'd like to find out more about Ad Hoc, and the kinds of projects we have going on, or 
+if you have any questions on the homework, we encourage you to join our public slack channel and speak with us there.
+
+For now, if you would select just one problem to complete and when you are done with the homework you should submit 
+it here., we will review those results and advise regarding next steps.
+
+Looking forward to reviewing your submission and to talking more soon!
+
+Thanks!
+Joe McMonagle
+Ad Hoc
+Reply Reply to All Forward 
+

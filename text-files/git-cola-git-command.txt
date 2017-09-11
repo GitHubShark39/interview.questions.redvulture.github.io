@@ -1,0 +1,7 @@
+
+
+git-cola
+
+git -c filter.lfs.smudge= -c filter.lfs.required=false -c diff.mnemonicprefix=false -c core.quotepath=false -c credential.helper=manager-st clone --branch master --recursive https://github.com/git-cola/git-cola.git C:\TowerRepository\git-cola
+Cloning into 'C:\TowerRepository\git-cola'...
+

@@ -1,0 +1,32 @@
+Horizontal scaling vs vertical scaling
+
+What is vertical scaling vs horizontal scaling?
+Horizontal scaling means that you scale by adding more machines into your pool of resources 
+whereas Vertical scaling means that you scale by adding more power (CPU, RAM) to an existing machine.
+
+
+Horizontal scaling means that you scale by adding more machines into your pool of resources whereas 
+Vertical scaling means that you scale by adding more power (CPU, RAM) to an existing machine.
+
+What is meant by horizontal scaling in cloud computing?
+Vertical scaling is limited by the fact that you can only get as big as the size of the server. 
+Horizontal scaling affords the ability to scale wider to deal with traffic. It is the ability to 
+connect multiple hardware or software entities, such as servers, so that they work as a single logical unit.
+
+What is scaling up and scaling out?
+To scale horizontally (or scale out/in) means to add more nodes to (or remove nodes from) a system, 
+such as adding a new computer to a distributed software application. An example might involve 
+scaling out from one Web server system to three.
+
+
+
+Clustering topologies
+Clustering is combining a group of machines into a logical entity that can be referenced as if it were one machine. This section describes various cluster configurations and the primary advantages and disadvantages of each.
+Horizontal clustering
+Horizontal clustering, sometimes referred to as scaling out, is adding physical machines to increase the performance or capacity of a cluster pool. Typically, horizontal scaling increases the availability of the clustered application at the cost of increased maintenance. Horizontal clustering can add capacity and increased throughput to a clustered application; use this type of clustering in most instances.
+Vertical clustering
+Vertical clustering, sometimes referred to as scaling up, is adding WebSphere Application Server instances to the same machine. Vertical scaling is useful for taking advantage of unused resources in large SMP servers. You can use vertical clustering to create multiple JVM processes that, together, can use all of the available processing power.
+Hybrid horizontal and vertical clustering
+Hybrid clustering is a combination of horizontal and vertical clustering. In this configuration, disparate hardware configurations are members of the same cluster. Larger, more capable machines might contain multiple WebSphere Application Server instances; smaller machines might be horizontally clustered and only contain one WebSphere Application Server instance.
+When you use vertical clustering, be cautious. The only way to determine what is correct for your environment and application is to tune a single instance of an application server for throughput and performance, and then add it to a cluster and incrementally add additional cluster members. Test performance and throughput as each member is added to the cluster. When you configure a vertical scaling topology, always monitor memory usage carefully; do not exceed the amount of addressable user space or the amount of available physical memory on a machine.
+

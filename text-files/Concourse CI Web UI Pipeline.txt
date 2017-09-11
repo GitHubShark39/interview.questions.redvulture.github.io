@@ -1,0 +1,15 @@
+Concourse CI Web UI Pipeline
+
+Prerequisites
+Before you begin, you will need an Ubuntu 16.04 server with at least 1G of RAM. 
+Complete the following guides to set up a non-root user, install and configure 
+Concourse, install Nginx, obtain a TLS/SSL certificate, and set up a secure 
+reverse proxy to the Concourse web UI. You will need a domain name pointed at 
+your Concourse server to properly secure it:
+
+Initial Server Setup with Ubuntu 16.04
+How To Install Concourse CI on Ubuntu 16.04
+How To Install Nginx on Ubuntu 16.04
+How To Secure Nginx with Let's Encrypt on Ubuntu 16.04
+How To Secure Concourse CI with SSL Using Nginx on Ubuntu 16.04
+

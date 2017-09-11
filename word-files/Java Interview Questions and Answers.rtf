@@ -1,0 +1,274 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.14393}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\par
+Java Interview Questions and Answers\par
+\par
+1) What is difference between JDK,JRE and JVM?\par
+\par
+JVM\par
+\par
+JVM is an acronym for Java Virtual Machine, it is an abstract machine which provides the runtime environment in which java bytecode can be executed. It is a specification.\par
+\par
+JVMs are available for many hardware and software platforms (so JVM is platform dependent).\par
+\par
+JRE\par
+\par
+JRE stands for Java Runtime Environment. It is the implementation of JVM.\par
+\par
+JDK\par
+\par
+JDK is an acronym for Java Development Kit. It physically exists. It contains JRE + development tools.\par
+\par
+more details...\par
+2) How many types of memory areas are allocated by JVM?\par
+\par
+Many types:\par
+\par
+Class(Method) Area\par
+Heap\par
+Stack\par
+Program Counter Register\par
+Native Method Stack\par
+more details...\par
+3) What is JIT compiler?\par
+\par
+Just-In-Time(JIT) compiler:It is used to improve the performance. JIT compiles parts of the byte code that have similar functionality at the same time, and hence reduces the amount of time needed for compilation.Here the term \ldblquote compiler\rdblquote  refers to a translator from the instruction set of a Java virtual machine (JVM) to the instruction set of a specific CPU.\par
+\par
+4) What is platform?\par
+\par
+A platform is basically the hardware or software environment in which a program runs. There are two types of platforms software-based and hardware-based. Java provides software-based platform.\par
+\par
+5) What is the main difference between Java platform and other platforms?\par
+\par
+The Java platform differs from most other platforms in the sense that it's a software-based platform that runs on top of other hardware-based platforms.It has two components:\par
+\par
+Runtime Environment\par
+API(Application Programming Interface)\par
+6) What gives Java its 'write once and run anywhere' nature?\par
+\par
+The bytecode. Java is compiled to be a byte code which is the intermediate language between source code and machine code. This byte code is not platform specific and hence can be fed to any platform.\par
+\par
+7) What is classloader?\par
+\par
+The classloader is a subsystem of JVM that is used to load classes and interfaces.There are many types of classloaders e.g. Bootstrap classloader, Extension classloader, System classloader, Plugin classloader etc.\par
+\par
+8) Is Empty .java file name a valid source file name?\par
+\par
+Yes, save your java file by .java only, compile it by javac .java and run by java yourclassname Let's take a simple example:\par
+\par
+//save by .java only  \par
+class A\{  \par
+public static void main(String args[])\{  \par
+System.out.println("Hello java");  \par
+\}  \par
+\}  \par
+//compile by javac .java  \par
+//run by     java A  \par
+compile it by javac .java\par
+\par
+run it by java A\par
+\par
+9) Is delete,next,main,exit or null keyword in java?\par
+\par
+No.\par
+\par
+10) If I don't provide any arguments on the command line, then the String array of Main method will be empty or null?\par
+\par
+It is empty. But not null.\par
+\par
+11) What if I write static public void instead of public static void?\par
+\par
+Program compiles and runs properly.\par
+\par
+12) What is the default value of the local variables?\par
+\par
+The local variables are not initialized to any default value, neither primitives nor object references.\par
+\par
+\par
+ \par
+Core Java - OOPs Concepts: Initial OOPs Interview Questions\par
+\par
+There is given more than 50 OOPs (Object-Oriented Programming and System) interview questions. But they have been categorized in many sections such as constructor interview questions, static interview questions, Inheritance Interview questions, Abstraction interview question, Polymorphism interview questions etc. for better understanding.\par
+\par
+13) What is difference between object oriented programming language and object based programming language?\par
+\par
+Object based programming languages follow all the features of OOPs except Inheritance. Examples of object based programming languages are JavaScript, VBScript etc.\par
+\par
+14) What will be the initial value of an object reference which is defined as an instance variable?\par
+\par
+The object references are all initialized to null in Java.\par
+\par
+Core Java - OOPs Concepts: Constructor Interview Questions\par
+\par
+15) What is constructor?\par
+\par
+Constructor is just like a method that is used to initialize the state of an object. It is invoked at the time of object creation.\par
+more details...\par
+16) What is the purpose of default constructor?\par
+\par
+The default constructor provides the default values to the objects. The java compiler creates a default constructor only if there is no constructor in the class.more details...\par
+17) Does constructor return any value?\par
+\par
+Ans:yes, that is current instance (You cannot use return type yet it returns a value).more details...\par
+\par
+18)Is constructor inherited?\par
+\par
+No, constructor is not inherited.\par
+\par
+19) Can you make a constructor final?\par
+\par
+No, constructor can't be final.\par
+\par
+Core Java - OOPs Concepts: static keyword Interview Questions\par
+\par
+20) What is static variable?\par
+\par
+static variable is used to refer the common property of all objects (that is not unique for each object) e.g. company name of employees,college name of students etc.\par
+static variable gets memory only once in class area at the time of class loading.\par
+more details...\par
+21) What is static method?\par
+\par
+A static method belongs to the class rather than object of a class.\par
+A static method can be invoked without the need for creating an instance of a class.\par
+static method can access static data member and can change the value of it.\par
+more details...\par
+22) Why main method is static?\par
+\par
+because object is not required to call static method if It were non-static method,jvm creats object first then call main() method that will lead to the problem of extra memory allocation.more details...\par
+\par
+23) What is static block?\par
+\par
+Is used to initialize the static data member.\par
+It is excuted before main method at the time of classloading.\par
+more details...\par
+24) Can we execute a program without main() method?\par
+\par
+Ans) Yes, one of the way is static block.more details...\par
+\par
+25) What if the static modifier is removed from the signature of the main method?\par
+\par
+Program compiles. But at runtime throws an error "NoSuchMethodError".\par
+\par
+26) What is difference between static (class) method and instance method?\par
+\par
+static or class method\tab instance method\par
+1)A method i.e. declared as static is known as static method.\tab A method i.e. not declared as static is known as instance method.\par
+2)Object is not required to call static method.\tab Object is required to call instance methods.\par
+3)Non-static (instance) members cannot be accessed in static context (static method, static block and static nested class) directly.\tab static and non-static variables both can be accessed in instance methods.\par
+4)For example: public static int cube(int n)\{ return n*n*n;\}\tab For example: public void msg()\{...\}.\par
+Core Java - OOPs Concepts: Inheritance Interview Questions\par
+\par
+27) What is this in java?\par
+\par
+It is a keyword that that refers to the current object.more details...\par
+\par
+28)What is Inheritance?\par
+\par
+Inheritance is a mechanism in which one object acquires all the properties and behaviour of another object of another class. It represents IS-A relationship. It is used for Code Resusability and Method Overriding.\par
+\par
+more details...\par
+29) Which class is the superclass for every class.\par
+\par
+Object class.\par
+\par
+30) Why multiple inheritance is not supported in java?\par
+\par
+To reduce the complexity and simplify the language, multiple inheritance is not supported in java in case of class.more details...\par
+31) What is composition?\par
+\par
+Holding the reference of the other class within some other class is known as composition.\par
+\par
+32) What is difference between aggregation and composition?\par
+\par
+Aggregation represents weak relationship whereas composition represents strong relationship. For example: bike has an indicator (aggregation) but bike has an engine (compostion).\par
+\par
+33) Why Java does not support pointers?\par
+\par
+Pointer is a variable that refers to the memory address. They are not used in java because they are unsafe(unsecured) and complex to understand.\par
+\par
+34) What is super in java?\par
+\par
+It is a keyword that refers to the immediate parent class object.more details...\par
+\par
+35) Can you use this() and super() both in a constructor?\par
+\par
+No. Because super() or this() must be the first statement.\par
+\par
+36)What is object cloning?\par
+\par
+The object cloning is used to create the exact copy of an object. more details...\par
+\par
+Core Java - OOPs Concepts: Method Overloading Interview Questions\par
+\par
+37) What is method overloading?\par
+\par
+If a class have multiple methods by same name but different parameters, it is known as Method Overloading. It increases the readability of the program.more details...\par
+\par
+38) Why method overloading is not possible by changing the return type in java?\par
+\par
+Becauseof ambiguity.more details...\par
+\par
+39) Can we overload main() method?\par
+\par
+Yes, You can have many main() methods in a class by overloading the main method.\par
+\par
+more details...\par
+Core Java - OOPs Concepts: Method Overriding Interview Questions\par
+\par
+40) What is method overriding:\par
+\par
+If a subclass provides a specific implementation of a method that is already provided by its parent class, it is known as Method Overriding. It is used for runtime polymorphism and to provide the specific implementation of the method.more details...\par
+\par
+41) Can we override static method?\par
+\par
+No, you can't override the static method because they are the part of class not object.\par
+\par
+42) Why we cannot override static method?\par
+\par
+It is because the static method is the part of class and it is bound with class whereas instance method is bound with object and static gets memory in class area and instance gets memory in heap.\par
+\par
+43) Can we override the overloaded method?\par
+\par
+Yes.\par
+\par
+44) Difference between method Overloading and Overriding.\par
+\par
+Method Overloading\tab Method Overriding\par
+1) Method overloading increases the readability of the program.\tab Method overriding provides the specific implementation of the method that is already provided by its super class.\par
+2) method overlaoding is occurs within the class.\tab Method overriding occurs in two classes that have IS-A relationship.\par
+3) In this case, parameter must be different.\tab In this case, parameter must be same.\par
+45) Can you have virtual functions in Java?\par
+\par
+Yes, all functions in Java are virtual by default.\par
+\par
+46) What is covariant return type?\par
+\par
+Now, since java5, it is possible to override any method by changing the return type if the return type of the subclass overriding method is subclass type. It is known as covariant return type. more details...\par
+\par
+Core Java - OOPs Concepts: final keyword Interview Questions\par
+\par
+47) What is final variable?\par
+\par
+If you make any variable as final, you cannot change the value of final variable(It will be constant).more details...\par
+\par
+48) What is final method?\par
+\par
+Final methods can't be overriden.more details...\par
+\par
+49) What is final class?\par
+\par
+Final class can't be inherited. more details...\par
+\par
+50) What is blank final variable?\par
+\par
+A final variable, not initalized at the time of declaration, is known as blank final variable.more details...\par
+\par
+51) Can we intialize blank final variable?\par
+\par
+Yes, only in constructor if it is non-static. If it is static blank final variable, it can be initialized only in the static block.more details...\par
+\par
+52) Can you declare the main method as final?\par
+\par
+Yes, such as, public static final void main(String[] args)\{\}.\par
+}
+ 
